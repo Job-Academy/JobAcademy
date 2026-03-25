@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Academy | Formazione Professionale a Genova</title>
+    <!-- Tailwind CSS per un design moderno e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons per icone eleganti -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E60000', // Rosso istituzionale Job Academy
+                        primaryHover: '#CC0000',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Stili aggiuntivi per animazioni fluide */
+        .fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(31, 41, 55, 0.8), rgba(31, 41, 55, 0.9)), url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-light text-gray-800 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-primary text-white flex items-center justify-center font-bold text-xl rounded shadow-md group-hover:bg-primaryHover transition">
+                        JA
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-dark uppercase">Job <span class="text-primary">Academy</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-primary font-medium transition">Home</a>
+                    <a href="#chi-siamo" class="text-gray-600 hover:text-primary font-medium transition">Chi Siamo</a>
+                    <a href="#corsi" class="text-gray-600 hover:text-primary font-medium transition">I Corsi</a>
+                    <a href="#contatti" class="text-gray-600 hover:text-primary font-medium transition">Contatti</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#home" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Home</a>
+                <a href="#chi-siamo" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Chi Siamo</a>
+                <a href="#corsi" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">I Corsi</a>
+                <a href="#contatti" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Contatti</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto">
+                <span class="block text-primary font-semibold tracking-wider uppercase mb-4 fade-in-up">Il tuo futuro inizia qui</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6 fade-in-up delay-100">
+                    Impara una professione.<br>Inizia a lavorare.
+                </h1>
+                <p class="text-xl text-gray-300 mb-10 fade-in-up delay-200">
+                    Formazione professionale d'eccellenza a Genova. Percorsi pratici, concreti e orientati all'inserimento lavorativo immediato o all'avvio d'impresa.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up delay-300">
+                    <a href="#corsi" class="bg-primary hover:bg-primaryHover text-white px-8 py-4 rounded-md font-semibold text-lg transition duration-300 shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
+                        Scopri i Corsi
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#contatti" class="bg-transparent border-2 border-white hover:bg-white hover:text-dark text-white px-8 py-4 rounded-md font-semibold text-lg transition duration-300 flex items-center justify-center">
+                        Contattaci Ora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chi Siamo Section -->
+    <section id="chi-siamo" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6">
+                        <i data-lucide="building-2" class="w-4 h-4"></i>
+                        L'Istituto
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">L'eccellenza della pratica, il rigore dell'istituzione.</h2>
+                    <div class="space-y-4 text-lg text-gray-600">
+                        <p>
+                            <strong>Job Academy</strong> è un istituto di formazione professionale con sede a Genova, nato con una missione chiara: colmare la distanza tra la teoria accademica e la pratica lavorativa.
+                        </p>
+                        <p>
+                            Crediamo in un approccio formativo istituzionale ed elegante, che non perde mai di vista l'obiettivo finale: l'inserimento nel mercato del lavoro. I nostri percorsi sono studiati per fornirti strumenti concreti, operativi e immediatamente spendibili.
+                        </p>
+                        <p>
+                            Che tu voglia diventare un professionista altamente qualificato per grandi aziende o avviare la tua impresa personale, noi costruiamo insieme a te le fondamenta del tuo futuro.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-6 border-t border-gray-100 pt-8">
+                        <div>
+                            <h4 class="text-3xl font-bold text-primary mb-1">100%</h4>
+                            <p class="text-gray-500 font-medium">Orientamento Pratico</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-bold text-primary mb-1">Top</h4>
+                            <p class="text-gray-500 font-medium">Docenti Qualificati</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square bg-gray-100 rounded-2xl overflow-hidden shadow-2xl relative">
+                        <!-- Immagine d'esempio professionale -->
+                        <img src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Studenti Job Academy" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent flex items-end p-8">
+                            <p class="text-white font-medium text-xl">Sede operativa in <br><span class="font-bold text-2xl">Genova, Via Canzio 4r</span></p>
+                        </div>
+                    </div>
+                    <!-- Decorazione -->
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-full -z-10 blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corsi Section -->
+    <section id="corsi" class="py-24 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">I Nostri Percorsi Formativi</h2>
+                <p class="text-lg text-gray-600">Scegli il percorso più adatto alle tue ambizioni. Ogni corso è progettato in risposta alle reali esigenze delle aziende sul territorio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Corso 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <i data-lucide="briefcase" class="w-7 h-7 text-primary group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Formazione Professionale</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-3">Percorsi intensivi progettati per acquisire competenze specifiche richieste dal mercato. Dalla teoria all'applicazione pratica immediata nei laboratori.</p>
+                    <a href="#contatti" class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                        Richiedi info <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Corso 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <i data-lucide="globe-2" class="w-7 h-7 text-primary group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Formazione Linguistica</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-3">Corsi di lingua mirati all'ambiente business, sanitario e professionale. Essenziali per operare con sicurezza in un mercato del lavoro sempre più internazionale.</p>
+                    <a href="#contatti" class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                        Richiedi info <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Corso 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-primary group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Sicurezza e Normative</h3>
+                    <p class="text-gray-600 mb-6 line-clamp-3">Corsi fondamentali e abilitanti, come la sicurezza sul lavoro (D.Lgs 81/08), per iniziare a lavorare nel pieno rispetto degli standard di legge.</p>
+                    <a href="#contatti" class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                        Richiedi info <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-dark rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                
+                <!-- Informazioni Contatto -->
+                <div class="lg:w-2/5 p-12 bg-dark text-white flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Inizia il tuo percorso.</h2>
+                        <p class="text-gray-400 mb-10 text-lg">Il mercato del lavoro non aspetta. Contattaci per informazioni sui corsi, tempistiche e iscrizioni.</p>
+                        
+                        <div class="space-y-6">
+                            <a href="https://maps.google.com/?q=Via+Canzio+4r,+16149+Genova" target="_blank" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-primary transition">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Sede Centrale</h4>
+                                    <p class="text-gray-400">Via Canzio 4r<br>16149 Genova (GE), Italia</p>
+                                </div>
+                            </a>
+
+                            <a href="tel:+393501591719" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-primary transition">
+                                    <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Telefono</h4>
+                                    <p class="text-gray-400">+39 350 159 1719</p>
+                                </div>
+                            </a>
+
+                            <a href="mailto:info@jobacademy.com" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-primary transition">
+                                    <i data-lucide="mail" class="w-5 h-5 text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Email</h4>
+                                    <p class="text-gray-400">info@jobacademy.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:w-3/5 p-12 bg-white">
+                    <h3 class="text-2xl font-bold text-dark mb-6">Inviaci un messaggio</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nome" class="block text-sm font-medium text-gray-700 mb-2">Nome e Cognome *</label>
+                                <input type="text" id="nome" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-gray-50 focus:bg-white" placeholder="Mario Rossi">
+                            </div>
+                            <div>
+                                <label for="telefono" class="block text-sm font-medium text-gray-700 mb-2">Telefono *</label>
+                                <input type="tel" id="telefono" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-gray-50 focus:bg-white" placeholder="+39 333 1234567">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-gray-50 focus:bg-white" placeholder="mario.rossi@email.com">
+                        </div>
+                        <div>
+                            <label for="messaggio" class="block text-sm font-medium text-gray-700 mb-2">Interesse / Messaggio *</label>
+                            <textarea id="messaggio" required rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-gray-50 focus:bg-white resize-none" placeholder="A quale corso sei interessato?"></textarea>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                              <input id="privacy" type="checkbox" required class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary">
+                            </div>
+                            <label for="privacy" class="ml-2 text-sm text-gray-500">
+                                Acconsento al trattamento dei dati personali in base alla <a href="#" class="text-primary hover:underline">Privacy Policy</a>.
+                            </label>
+                        </div>
+                        <button type="submit" id="submitBtn" class="w-full bg-primary hover:bg-primaryHover text-white font-bold py-4 px-8 rounded-lg transition duration-300 flex justify-center items-center gap-2">
+                            <span>Invia Richiesta</span>
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Elemento decorativo di background -->
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary text-white flex items-center justify-center font-bold text-sm rounded">JA</div>
+                <span class="font-bold text-white tracking-wider">JOB ACADEMY SRL</span>
+            </div>
+            <div class="text-center md:text-left text-sm">
+                &copy; 2026 Job Academy SRL. Tutti i diritti riservati.<br>
+                Sede Legale: Via Canzio 4r, 16149 Genova (GE).
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modale Successo Invio Form (Inizialmente nascosta) -->
+    <div id="successModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-dark/80 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl transform scale-95 transition-transform duration-300" id="modalContent">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i data-lucide="check-circle" class="w-10 h-10 text-green-500"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-dark mb-2">Richiesta Inviata!</h3>
+            <p class="text-gray-600 mb-8">Grazie per averci contattato. Un consulente di Job Academy ti ricontatterà al più presto per fornirti tutte le informazioni necessarie.</p>
+            <button id="closeModalBtn" class="bg-dark hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-lg transition w-full">
+                Chiudi
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Inizializza le icone Lucide
+        lucide.createIcons();
+
+        // Menu Mobile Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Chiudi il menu mobile quando si clicca su un link
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Gestione Form e Modale
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitBtnText = submitBtn.querySelector('span');
+        const submitBtnIcon = submitBtn.querySelector('i');
+        const modal = document.getElementById('successModal');
+        const modalContent = document.getElementById('modalContent');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita il ricaricamento della pagina
+            
+            // Stato di caricamento
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            submitBtnText.textContent = 'Invio in corso...';
+            submitBtnIcon.setAttribute('data-lucide', 'loader-2');
+            submitBtnIcon.classList.add('animate-spin');
+            lucide.createIcons();
+            
+            // Simula una chiamata API (1.5 secondi)
+            setTimeout(() => {
+                // Ripristina il bottone
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                submitBtnText.textContent = 'Invia Richiesta';
+                submitBtnIcon.setAttribute('data-lucide', 'send');
+                submitBtnIcon.classList.remove('animate-spin');
+                lucide.createIcons();
+                
+                // Resetta il form
+                form.reset();
+                
+                // Mostra la modale di successo
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                // Timeout minuscolo per permettere al display:flex di applicarsi prima della transizione opacity
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    modalContent.classList.remove('scale-95');
+                    modalContent.classList.add('scale-100');
+                }, 10);
+            }, 1500);
+        });
+
+        // Funzione per chiudere la modale
+        const closeModal = () => {
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300); // Aspetta la fine della transizione
+        };
+
+        closeModalBtn.addEventListener('click', closeModal);
+        
+        // Chiudi la modale cliccando fuori
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
