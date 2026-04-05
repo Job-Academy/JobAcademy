@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<html lang="it"><head></head><body class="bg-surface font-body text-on-surface">```html
 
-<html class="" lang="it"><head>
+
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -14,51 +15,9 @@
                     colors: {
                         primary: "#E31E24",
                         secondary: "#4e5e82",
+                        navy: "#364669",
                         surface: "#f8f9fa",
-                        "on-surface": "#191c1d",
-                        "surface-container-low": "#f3f4f5",
-                        "outline-variant": "#e7bdb8",
-                        "on-surface-variant": "#5d3f3c",
-                        "on-secondary-fixed-variant": "#364669",
-                        "on-primary-fixed": "#410002",
-                        outline: "#926f6b",
-                        "on-tertiary-fixed-variant": "#004b71",
-                        "primary-fixed": "#ffdad6",
-                        "inverse-primary": "#ffb4ab",
-                        "secondary-container": "#c4d4fe",
-                        "surface-bright": "#f8f9fa",
-                        "secondary-fixed": "#d8e2ff",
-                        "on-error": "#ffffff",
-                        "on-tertiary-container": "#fbfcff",
-                        "on-secondary-container": "#4b5b7f",
-                        "surface-container-highest": "#e1e3e4",
-                        "surface-variant": "#e1e3e4",
-                        "tertiary-fixed": "#cbe6ff",
-                        "surface-container-high": "#e7e8e9",
-                        "on-error-container": "#93000a",
-                        "on-primary": "#ffffff",
-                        "inverse-on-surface": "#f0f1f2",
-                        "primary-container": "#E31E24",
-                        "surface-dim": "#d9dadb",
-                        "surface-tint": "#E31E24",
-                        tertiary: "#006190",
-                        "error-container": "#ffdad6",
-                        "on-primary-container": "#fffafa",
-                        "surface-container-lowest": "#ffffff",
-                        background: "#f8f9fa",
-                        "surface-container": "#edeeef",
-                        "on-secondary-fixed": "#071b3b",
-                        "inverse-surface": "#2e3132",
-                        "on-tertiary": "#ffffff",
-                        error: "#ba1a1a",
-                        "tertiary-fixed-dim": "#8ecdff",
-                        "secondary-fixed-dim": "#b6c6f0",
-                        "primary-fixed-dim": "#ffb4ab",
-                        "on-tertiary-fixed": "#001e30",
-                        "tertiary-container": "#007bb5",
-                        "on-primary-fixed-variant": "#93000d",
-                        "on-secondary": "#ffffff",
-                        "on-background": "#191c1d"
+                        "on-surface": "#191c1d"
                     },
                     fontFamily: {
                         headline: ["Plus Jakarta Sans"],
@@ -82,13 +41,7 @@
         }
         body {
             -webkit-tap-highlight-color: transparent;
-        }
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
+            scroll-behavior: smooth;
         }
         .hero-gradient {
             background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.9) 100%);
@@ -102,20 +55,20 @@
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
         }
-    </style>
-<style>
-        body {
-            min-height: max(884px, 100dvh);
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%234e5e82'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.5em 1.5em;
         }
     </style>
-</head>
-<body class="bg-surface font-body text-on-surface">
 <header class="bg-white sticky top-0 z-[60] px-5 py-4 border-b border-gray-100 shadow-sm flex justify-between items-center">
 <div class="flex items-center gap-3">
 <img alt="Job Academy Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ugovjEiwzeThAYa9mZ0mvPOo8QEY4AnSgT_v9vxA4JBXcCwpDNPUxXAfqimVK-_ELL914o82S8_DgbqW-W2J0Y8uz9I7oQPsHlLHXR4_4YHiKjlyMYR_-_ttofEDySb33N3kMbxtTmlpbRevh9Bex7iOxKbr3dEXeMg7p-okyMhtk_cLIX0g2ooT1NgG51XXVSehRuU1Pyq7B4QUAaqoFYyc5XOI914i1keHGMF_SPIhqzlJRxzNyQMFLsp24G6C5UsUd6fxNokqw"/>
 <div class="flex flex-col">
 <h1 class="font-headline font-extrabold text-primary text-base uppercase tracking-tighter leading-none">Job Academy</h1>
-<p class="text-secondary font-bold text-[8px] tracking-widest uppercase">Servizi per il Futuro</p>
+<p class="text-secondary font-bold text-[8px] tracking-widest uppercase" data-translate="header_tagline">Servizi per il Futuro</p>
 </div>
 </div>
 <a class="bg-[#25D366] text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg shadow-green-500/20" href="https://wa.me/393501591719">
@@ -124,178 +77,198 @@
 </header>
 <main class="flex flex-col gap-12 pb-44">
 <section class="relative h-[707px] flex flex-col justify-end p-8 overflow-hidden -mt-20 pt-20">
-<img alt="Professional success momentum" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQpaCPMfGBaaw8f6HHB2U5aeH1ieHRzAvPQfF-4XVvqs3OzdLBHWnlRq-DkfvPMlltPIEL9lktBlRlNOmJTP2CoWJFPnYG-AbkOkwY_jQIl8DGDSRbyIjtevcOMl7YM3qDK2DewS3Ml5tN0yjCbdh_ZMEHg-1BbeTMZ3fdhAcxoZrNbD-WcLK8m6DHjWGL0wVvioFF0IwYT22Fgg_tmqwAHeSMQa0JyKul1HsFhxtXXcpA6-Mf9Ua1DrHoWsQFEXerfbpXyXz2rSA"/>
+<img alt="Professional success momentum" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzfVC7FOw6y5h2AkeM0LTKpXLnlzQ8MX1CtRmxibh-QjuNmUOvOqmI8cx4nRAAZoqQsTvrf3j8foE6_oenSuk4oSnw4DEZlGbGsoqm5WYi1L-1Gsb5Dq6bZJBP7-7JjTgUws4y4BAo5bELQ0_7Og0v9l3NCivTA4nXpr5PQ_k8oNy6uxxrtkbWJnLDiAKEyLbmBgRhS4vOSuJ4xzGNMKltA3-MCZUSBepnZQttGCPz_8VRGCA2QGi-hJDKO0lIn5yUgmxJiEq-iNE"/>
 <div class="absolute inset-0 hero-gradient"></div>
 <div class="relative z-10 space-y-6 max-w-sm">
-<h2 class="font-headline text-5xl font-extrabold text-white leading-tight uppercase tracking-tight">
-                    Costruisci il tuo <span class="text-primary">futuro in Italia.</span>
+<h2 class="font-headline text-5xl font-extrabold text-white leading-tight uppercase tracking-tight" data-translate="hero_title">
+                    Costruisci il tuo <br/><span class="text-primary">futuro in Italia.</span>
 </h2>
 <div class="border-l-4 border-primary pl-5">
-<p class="text-white text-lg font-medium leading-tight">Formazione, documenti, lavoro.</p>
-<p class="text-primary font-bold text-lg">Tutto in un unico posto.</p>
+<p class="text-white text-lg font-medium leading-tight" data-translate="hero_subtitle1">Formazione, documenti, lavoro.</p>
+<p class="text-primary font-bold text-lg" data-translate="hero_subtitle2">Tutto in un unico posto.</p>
 </div>
 </div>
 </section>
-<section class="px-5 flex flex-col gap-8 -mt-12 relative z-20">
+<section class="px-5 -mt-8 relative z-30">
+<div class="bg-white p-6 rounded-[2rem] shadow-xl border border-gray-100">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="translate">translate</span>
+<h3 class="font-headline text-lg font-extrabold uppercase text-secondary tracking-tight" data-translate="lang_select_title">Che lingua parli?</h3>
+</div>
+<div class="relative">
+<select class="w-full bg-surface border-2 border-gray-100 rounded-2xl px-5 py-4 font-bold text-secondary focus:border-primary focus:ring-0 transition-all text-base" id="languageSelector">
+<option value="it">Italiano</option>
+<option value="es">Spanish (Español)</option>
+<option value="bn">Bangla (বাংলা)</option>
+<option value="ar">Arabic (العربية)</option>
+<option value="fr">French (Français)</option>
+<option value="en">English</option>
+<option value="ur">Urdu (اردو)</option>
+<option value="sq">Albanian (Shqip)</option>
+<option value="uk">Ukrainian (Українська)</option>
+<option value="ka">Georgian (ქართული)</option>
+<option value="ro">Romanian (Română)</option>
+<option value="ru">Russian (Русский)</option>
+<option value="tr">Turkish (Türkçe)</option>
+<option value="pt">Portuguese (Português)</option>
+<option value="tl">Filipino (Tagalog)</option>
+<option value="zh">Chinese (中文)</option>
+</select>
+</div>
+</div>
+</section>
+<section class="px-5 flex flex-col gap-8 relative z-20" id="servizi-ancora">
 <div class="flex items-center justify-between border-b-2 border-primary/20 pb-2 bg-surface/80 backdrop-blur-md rounded-t-xl px-2">
-<h3 class="font-headline text-2xl font-black uppercase text-secondary">I Nostri Servizi</h3>
-<span class="bg-primary/10 text-primary text-[10px] px-3 py-1 rounded-full font-black uppercase tracking-wider">Expertise</span>
+<h3 class="font-headline text-2xl font-black uppercase text-secondary" data-translate="services_heading">I Nostri Servizi</h3>
+<span class="bg-primary/10 text-primary text-[10px] px-3 py-1 rounded-full font-black uppercase tracking-wider" data-translate="expertise_label">Expertise</span>
 </div>
 <div class="grid grid-cols-1 gap-6">
 <div class="group relative bg-white p-7 rounded-[2.5rem] border border-gray-100 shadow-xl shadow-gray-200/40 active:scale-[0.98] transition-all overflow-hidden card-pattern">
-<div class="absolute -top-4 -right-4 opacity-[0.03] group-active:opacity-[0.07] transition-opacity">
-<span class="material-symbols-outlined text-[10rem]" data-icon="description">description</span>
-</div>
 <div class="relative z-10">
 <div class="flex items-center gap-5 mb-5">
 <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/20">
 <span class="material-symbols-outlined text-white text-4xl" data-icon="description">description</span>
 </div>
-<h4 class="font-headline text-xl font-extrabold uppercase text-secondary tracking-tight">CAF &amp; PATRONATO</h4>
+<h4 class="font-headline text-xl font-extrabold uppercase text-secondary tracking-tight" data-translate="service1_title">CAF &amp; PATRONATO</h4>
 </div>
-<p class="text-secondary/80 font-medium leading-relaxed text-sm">Isee, 730, Assegno Unico, Naspi, Pensioni, Invalidità, Bonus, Carta acquisti, 104.</p>
+<p class="text-secondary/80 font-medium leading-relaxed text-sm" data-translate="service1_desc">Isee, 730, Assegno Unico, Naspi, Pensioni, Invalidità, Bonus, Carta acquisti, 104.</p>
 </div>
 </div>
 <div class="group relative bg-white p-7 rounded-[2.5rem] border border-gray-100 shadow-xl shadow-gray-200/40 active:scale-[0.98] transition-all overflow-hidden card-pattern">
-<div class="absolute -top-4 -right-4 opacity-[0.03] group-active:opacity-[0.07] transition-opacity">
-<span class="material-symbols-outlined text-[10rem]" data-icon="travel_explore">travel_explore</span>
-</div>
 <div class="relative z-10">
 <div class="flex items-center gap-5 mb-5">
 <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/20">
 <span class="material-symbols-outlined text-white text-4xl" data-icon="travel_explore">travel_explore</span>
 </div>
-<h4 class="font-headline text-xl font-extrabold uppercase text-secondary tracking-tight">SERVIZI MIGRATORI</h4>
+<h4 class="font-headline text-xl font-extrabold uppercase text-secondary tracking-tight" data-translate="service2_title">SERVIZI MIGRATORI</h4>
 </div>
-<p class="text-secondary/80 font-medium leading-relaxed text-sm">Permesso di soggiorno, Cittadinanza &amp; Ricongiungimento, Spid / CIE &amp; Residenza.</p>
+<p class="text-secondary/80 font-medium leading-relaxed text-sm" data-translate="service2_desc">Permesso di soggiorno, Cittadinanza &amp; Ricongiungimento, Spid / CIE &amp; Residenza.</p>
 </div>
 </div>
 <div class="group relative bg-white p-7 rounded-[2.5rem] border border-gray-100 shadow-xl shadow-gray-200/40 active:scale-[0.98] transition-all overflow-hidden card-pattern">
-<div class="absolute -top-4 -right-4 opacity-[0.03] group-active:opacity-[0.07] transition-opacity">
-<span class="material-symbols-outlined text-[10rem]" data-icon="work">work</span>
-</div>
 <div class="relative z-10">
 <div class="flex items-center gap-5 mb-5">
 <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center shadow-lg shadow-secondary/20">
 <span class="material-symbols-outlined text-white text-4xl" data-icon="work">work</span>
 </div>
-<h4 class="font-headline text-xl font-extrabold uppercase text-secondary tracking-tight">LAVORO &amp; FINANZA</h4>
+<h4 class="font-headline text-xl font-extrabold uppercase text-secondary tracking-tight" data-translate="service3_title">LAVORO &amp; FINANZA</h4>
 </div>
-<p class="text-secondary/80 font-medium leading-relaxed text-sm">Somministrazione Lavoro, Prestiti, Mutui &amp; Assicurazioni, Cessione del Quinto.</p>
+<p class="text-secondary/80 font-medium leading-relaxed text-sm" data-translate="service3_desc">Somministrazione Lavoro, Prestiti, Mutui &amp; Assicurazioni, Cessione del Quinto.</p>
 </div>
 </div>
 <div class="group relative bg-white p-7 rounded-[2.5rem] border border-gray-100 shadow-xl shadow-gray-200/40 active:scale-[0.98] transition-all overflow-hidden card-pattern">
-<div class="absolute -top-4 -right-4 opacity-[0.03] group-active:opacity-[0.07] transition-opacity">
-<span class="material-symbols-outlined text-[10rem]" data-icon="gavel">gavel</span>
-</div>
 <div class="relative z-10">
 <div class="flex items-center gap-5 mb-5">
 <div class="w-16 h-16 bg-slate-500 rounded-2xl flex items-center justify-center shadow-lg shadow-slate-500/20">
 <span class="material-symbols-outlined text-white text-4xl" data-icon="gavel">gavel</span>
 </div>
-<h4 class="font-headline text-xl font-extrabold uppercase text-secondary tracking-tight">CASA &amp; LEGALI</h4>
+<h4 class="font-headline text-xl font-extrabold uppercase text-secondary tracking-tight" data-translate="service4_title">CASA &amp; LEGALI</h4>
 </div>
-<p class="text-secondary/80 font-medium leading-relaxed text-sm">Contratti Locazione &amp; IMU, Assistenza legale &amp; Traduzioni, Riconoscimento titoli esteri.</p>
+<p class="text-secondary/80 font-medium leading-relaxed text-sm" data-translate="service4_desc">Contratti Locazione &amp; IMU, Assistenza legale &amp; Traduzioni, Riconoscimento titoli esteri.</p>
 </div>
 </div>
 </div>
 </section>
-<section class="bg-primary py-12 px-5 text-white relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-black/5 rounded-full -ml-24 -mb-24"></div>
+<section class="bg-primary py-12 px-5 text-white relative overflow-hidden" id="formazione">
 <div class="relative z-10">
 <div class="flex items-center gap-4 mb-10">
 <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/30">
 <span class="material-symbols-outlined text-4xl" data-icon="school">school</span>
 </div>
-<h3 class="font-headline text-3xl font-black uppercase leading-none tracking-tight">Formazione<br/>Professionale</h3>
+<h3 class="font-headline text-3xl font-black uppercase leading-none tracking-tight" data-translate="formazione_title">Formazione<br/>Professionale</h3>
 </div>
 <div class="grid grid-cols-1 gap-6">
 <div class="glass-effect p-6 rounded-3xl border border-white/20 shadow-xl">
 <h4 class="text-xs font-black text-white/70 mb-4 uppercase tracking-[0.2em] border-b border-white/10 pb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-lg" data-icon="star">star</span> Corsi Principali
+<span class="material-symbols-outlined text-lg" data-icon="star">star</span> <span data-translate="cat1_title">Corsi Principali</span>
 </h4>
 <ul class="text-[15px] font-bold italic space-y-3">
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Corso operatore CAF/Patronato</span>
-</li>
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Gestore Agenzia Job Academy</span>
-</li>
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Corso HACCP</span>
-</li>
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Sicurezza sul lavoro (basso rischio)</span>
-</li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="course1">Corso operatore CAF/Patronato</span></li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="course2">Gestore Agenzia Job Academy</span></li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="course3">Corso HACCP</span></li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="course4">Sicurezza sul lavoro (basso rischio)</span></li>
 </ul>
 </div>
 <div class="glass-effect p-6 rounded-3xl border border-white/20 shadow-xl">
 <h4 class="text-xs font-black text-white/70 mb-4 uppercase tracking-[0.2em] border-b border-white/10 pb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-lg" data-icon="translate">translate</span> Corsi di Lingua
+<span class="material-symbols-outlined text-lg" data-icon="translate">translate</span> <span data-translate="cat2_title">Corsi di Lingua</span>
 </h4>
 <ul class="text-[15px] font-bold italic space-y-3">
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Italiano per stranieri (multilingua)</span>
-</li>
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Inglese per ispanofoni</span>
-</li>
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Spagnolo &amp; Arabo</span>
-</li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="lang_course1">Italiano per stranieri (multilingua)</span></li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="lang_course2">Inglese per ispanofoni</span></li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="lang_course3">Spagnolo &amp; Arabo</span></li>
 </ul>
 </div>
 <div class="glass-effect p-6 rounded-3xl border border-white/20 shadow-xl">
 <h4 class="text-xs font-black text-white/70 mb-4 uppercase tracking-[0.2em] border-b border-white/10 pb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-lg" data-icon="build">build</span> Formazione Pratica
+<span class="material-symbols-outlined text-lg" data-icon="build">build</span> <span data-translate="cat3_title">Formazione Pratica</span>
 </h4>
 <ul class="text-[15px] font-bold italic space-y-3">
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Teoria Patente di Guida</span>
-</li>
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Preparazione Esame A2/B1</span>
-</li>
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Certificazioni Lingua Italiana</span>
-</li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="pract_course1">Teoria Patente di Guida</span></li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="pract_course2">Preparazione Esame A2/B1</span></li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="pract_course3">Certificazioni Lingua Italiana</span></li>
 </ul>
 </div>
 <div class="glass-effect p-6 rounded-3xl border border-white/20 shadow-xl">
 <h4 class="text-xs font-black text-white/70 mb-4 uppercase tracking-[0.2em] border-b border-white/10 pb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-lg" data-icon="add_circle">add_circle</span> Extra
+<span class="material-symbols-outlined text-lg" data-icon="add_circle">add_circle</span> <span data-translate="cat4_title">Extra</span>
 </h4>
 <ul class="text-[15px] font-bold italic space-y-3">
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Corsi di Uncinetto (Crochet)</span>
-</li>
-<li class="flex gap-3">
-<span class="text-white/60">•</span>
-<span>Corsi Online &amp; Digital Skills</span>
-</li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="extra_course1">Corsi di Uncinetto (Crochet)</span></li>
+<li class="flex gap-3"><span class="text-white/60">•</span><span data-translate="extra_course2">Corsi Online &amp; Digital Skills</span></li>
 </ul>
 </div>
 </div>
 </div>
 </section>
+<!-- New Section: Diventa Agente Job Academy -->
+<section class="px-5">
+<div class="relative bg-navy p-8 rounded-[2.5rem] text-white shadow-2xl overflow-hidden card-pattern">
+<div class="relative z-10">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-4xl opacity-40" data-icon="handshake">handshake</span>
+<h3 class="font-headline text-2xl font-black uppercase tracking-tight" data-translate="agente_title">Diventa Agente Job Academy</h3>
+</div>
+<p class="text-white/80 font-bold text-lg leading-tight mb-8" data-translate="agente_motto">Guadagna facilitando la vita delle persone</p>
+<div class="flex flex-wrap gap-4 mb-10 opacity-60">
+<span class="material-symbols-outlined text-3xl" data-icon="person_add">person_add</span>
+<span class="material-symbols-outlined text-3xl" data-icon="euro">euro</span>
+<span class="material-symbols-outlined text-3xl" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+<a class="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-5 rounded-2xl shadow-xl shadow-primary/30 active:scale-95 transition-all w-full" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="work">work</span>
+<span class="text-base font-black uppercase tracking-widest" data-translate="agente_cta">LAVORA CON NOI</span>
+</a>
+</div>
+</div>
+</section>
+<!-- New Section: IMPRENDITORE JOB ACADEMY -->
+<section class="px-5">
+<div class="relative bg-slate-800 p-8 rounded-[2.5rem] text-white shadow-2xl overflow-hidden border border-white/5">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="domain">domain</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-4xl opacity-40" data-icon="apartment">apartment</span>
+<h3 class="font-headline text-2xl font-black uppercase tracking-tight" data-translate="imprenditore_title">IMPRENDITORE JOB ACADEMY</h3>
+</div>
+<p class="text-white/80 font-bold text-lg leading-tight mb-8" data-translate="imprenditore_motto">Investi sul futuro, diventa responsabile d'agenzia</p>
+<div class="flex items-center gap-6 mb-10 opacity-60">
+<span class="material-symbols-outlined text-3xl" data-icon="trending_up">trending_up</span>
+<span class="material-symbols-outlined text-3xl" data-icon="storefront">storefront</span>
+</div>
+<a class="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-5 rounded-2xl shadow-xl shadow-primary/30 active:scale-95 transition-all w-full" href="#">
+<span class="text-base font-black uppercase tracking-widest" data-translate="imprenditore_cta">APRI UNA AGENZIA</span>
+</a>
+</div>
+</div>
+</section>
 <section class="px-5">
 <div class="relative bg-secondary p-8 rounded-[2.5rem] text-white shadow-2xl shadow-secondary/40 overflow-hidden">
-<div class="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full"></div>
 <div class="relative z-10">
 <h3 class="font-headline text-2xl font-black mb-10 uppercase tracking-tight flex items-center gap-3">
-<span class="w-1.5 h-8 bg-primary rounded-full"></span> Perché Job Academy?
+<span class="w-1.5 h-8 bg-primary rounded-full"></span> <span data-translate="why_title">Perché Job Academy?</span>
 </h3>
 <div class="space-y-8">
 <div class="flex items-start gap-5">
@@ -303,45 +276,30 @@
 <span class="material-symbols-outlined text-white text-3xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
 </div>
 <div class="space-y-1">
-<p class="text-lg font-bold leading-tight">Servizi Multidisciplinari</p>
-<p class="text-white/70 text-sm font-medium">Tutto il supporto di cui hai bisogno in un unico centro specializzato.</p>
+<p class="text-lg font-bold leading-tight" data-translate="why1_title">Servizi Multidisciplinari</p>
+<p class="text-white/70 text-sm font-medium" data-translate="why1_desc">Tutto il supporto di cui hai bisogno in un unico centro specializzato.</p>
 </div>
 </div>
 <div class="flex items-start gap-5">
 <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
 <span class="material-symbols-outlined text-white text-3xl" data-icon="public" style="font-variation-settings: 'FILL' 1;">public</span>
 </div>
-<div class="space-y-3">
 <div class="space-y-1">
-<p class="text-lg font-bold leading-tight">Esperti Multilingua</p>
-<p class="text-white/70 text-sm font-medium mb-3">Parliamo la tua lingua per una comunicazione chiara e trasparente.</p>
-</div>
-<div class="flex flex-wrap gap-2"><a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|es)" onclick="window.location.hash='#googtrans(it|es)';location.reload();">Spanish</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|bn)" onclick="window.location.hash='#googtrans(it|bn)';location.reload();">Bangla</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|ar)" onclick="window.location.hash='#googtrans(it|ar)';location.reload();">Arabic</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|fr)" onclick="window.location.hash='#googtrans(it|fr)';location.reload();">French</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|en)" onclick="window.location.hash='#googtrans(it|en)';location.reload();">English</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|ur)" onclick="window.location.hash='#googtrans(it|ur)';location.reload();">Urdu</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|sq)" onclick="window.location.hash='#googtrans(it|sq)';location.reload();">Albanian</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|uk)" onclick="window.location.hash='#googtrans(it|uk)';location.reload();">Ukrainian</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|ka)" onclick="window.location.hash='#googtrans(it|ka)';location.reload();">Georgian</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|ro)" onclick="window.location.hash='#googtrans(it|ro)';location.reload();">Romanian</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|ru)" onclick="window.location.hash='#googtrans(it|ru)';location.reload();">Russian</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|tr)" onclick="window.location.hash='#googtrans(it|tr)';location.reload();">Turkish</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|pt)" onclick="window.location.hash='#googtrans(it|pt)';location.reload();">Portuguese</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|tl)" onclick="window.location.hash='#googtrans(it|tl)';location.reload();">Filipino</a>
-<a class="bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-white/10 hover:bg-white/20 transition-colors" href="#googtrans(it|zh-CN)" onclick="window.location.hash='#googtrans(it|zh-CN)';location.reload();">Chinese</a></div>
+<p class="text-lg font-bold leading-tight" data-translate="why2_title">Esperti Multilingua</p>
+<p class="text-white/70 text-sm font-medium" data-translate="why2_desc">Parliamo la tua lingua per una comunicazione chiara e trasparente.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<footer class="px-5 py-12 bg-white text-center flex flex-col gap-8 border-t border-gray-100">
+<footer class="px-5 py-12 bg-white text-center flex flex-col gap-8 border-t border-gray-100" id="contatti">
 <div class="flex flex-col items-center gap-6">
 <div class="flex flex-col items-center gap-2">
 <span class="material-symbols-outlined text-primary text-2xl" data-icon="location_on">location_on</span>
-<p class="text-secondary text-sm font-bold tracking-tight"><a class="hover:text-primary transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Canzio+50r,+Genova+Sampierdarena" target="_blank">Via Canzio 50r, Genova Sampierdarena</a></p>
+<p class="text-secondary text-sm font-bold tracking-tight">
+<a class="hover:text-primary transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Canzio+50r,+Genova+Sampierdarena" target="_blank">Via Canzio 50r, Genova Sampierdarena</a>
+</p>
 </div>
 <div class="grid grid-cols-1 gap-4 w-full max-w-xs mx-auto">
 <a class="flex items-center justify-center gap-3 text-secondary hover:text-primary transition-colors" href="tel:+393501591719">
@@ -353,11 +311,11 @@
 <span class="text-sm font-bold">jobacademysrl@pec.it</span>
 </a>
 </div>
-<div class="bg-surface-container px-4 py-2 rounded-full inline-block">
-<p class="text-[10px] text-secondary/60 font-black uppercase tracking-widest">P.IVA 03071340990</p>
+<div class="bg-surface px-4 py-2 rounded-full inline-block">
+<p class="text-[10px] text-secondary/60 font-black uppercase tracking-widest" data-translate="piva_text">P.IVA 03071340990</p>
 </div>
 </div>
-<div class="text-[9px] text-secondary/40 font-black uppercase tracking-[0.3em] pt-4 border-t border-gray-50">
+<div class="text-[9px] text-secondary/40 font-black uppercase tracking-[0.3em] pt-4 border-t border-gray-50" data-translate="footer_copy">
                 © Job Academy - Genova Sampierdarena
             </div>
 </footer>
@@ -365,15 +323,491 @@
 <nav class="fixed bottom-6 left-5 right-5 z-[100]">
 <div class="bg-white/80 backdrop-blur-xl border border-white/20 p-3 rounded-[2.5rem] shadow-2xl shadow-black/15">
 <div class="flex gap-3">
-<a class="flex-[1.4] bg-primary text-white py-4 rounded-3xl flex items-center justify-center gap-3 shadow-lg shadow-primary/30 active:scale-95 transition-all" href="https://wa.me/393501591719">
+<a class="flex-[1.4] bg-primary text-white py-4 rounded-3xl flex items-center justify-center gap-3 shadow-lg shadow-primary/30 active:scale-95 transition-all" href="#contatti">
 <span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
-<span class="text-sm font-black uppercase tracking-wider">Contattaci</span>
+<span class="text-sm font-black uppercase tracking-wider" data-translate="cta_contact">Contattaci</span>
 </a>
-<button class="flex-1 bg-secondary text-white py-4 rounded-3xl flex items-center justify-center gap-3 shadow-lg shadow-secondary/30 active:scale-95 transition-all">
+<a class="flex-1 bg-navy text-white py-4 rounded-3xl flex items-center justify-center gap-3 shadow-lg shadow-secondary/30 active:scale-95 transition-all" href="#servizi-ancora">
 <span class="material-symbols-outlined text-2xl" data-icon="assignment">assignment</span>
-<span class="text-sm font-black uppercase tracking-wider">Servizi</span>
-</button>
+<span class="text-sm font-black uppercase tracking-wider" data-translate="cta_services">Servizi</span>
+</a>
 </div>
 </div>
 </nav>
-</body></html>
+<script>
+        const translations = {
+            it: {
+                header_tagline: 'Servizi per il Futuro',
+                hero_title: 'Costruisci il tuo <br/><span class="text-primary">futuro in Italia.</span>',
+                hero_subtitle1: 'Formazione, documenti, lavoro.',
+                hero_subtitle2: 'Tutto in un unico posto.',
+                lang_select_title: 'Che lingua parli?',
+                services_heading: 'I Nostri Servizi',
+                expertise_label: 'Expertise',
+                service1_title: 'CAF & PATRONATO',
+                service1_desc: 'Isee, 730, Assegno Unico, Naspi, Pensioni, Invalidità, Bonus, Carta acquisti, 104.',
+                service2_title: 'SERVIZI MIGRATORI',
+                service2_desc: 'Permesso di soggiorno, Cittadinanza & Ricongiungimento, Spid / CIE & Residenza.',
+                service3_title: 'LAVORO & FINANZA',
+                service3_desc: 'Somministrazione Lavoro, Prestiti, Mutui & Assicurazioni, Cessione del Quinto.',
+                service4_title: 'CASA & LEGALI',
+                service4_desc: 'Contratti Locazione & IMU, Assistenza legale & Traduzioni, Riconoscimento titoli esteri.',
+                formazione_title: 'Formazione<br/>Professionale',
+                cat1_title: 'Corsi Principali',
+                course1: 'Corso operatore CAF/Patronato',
+                course2: 'Gestore Agenzia Job Academy',
+                course3: 'Corso HACCP',
+                course4: 'Sicurezza sul lavoro (basso rischio)',
+                cat2_title: 'Corsi di Lingua',
+                lang_course1: 'Italiano per stranieri (multilingua)',
+                lang_course2: 'Inglese per ispanofoni',
+                lang_course3: 'Spagnolo & Arabo',
+                cat3_title: 'Formazione Pratica',
+                pract_course1: 'Teoria Patente di Guida',
+                pract_course2: 'Preparazione Esame A2/B1',
+                pract_course3: 'Certificazioni Lingua Italiana',
+                cat4_title: 'Extra',
+                extra_course1: 'Corsi di Uncinetto (Crochet)',
+                extra_course2: 'Corsi Online & Digital Skills',
+                why_title: 'Perché Job Academy?',
+                why1_title: 'Servizi Multidisciplinari',
+                why1_desc: 'Tutto il supporto di cui hai bisogno in un unico centro specializzato.',
+                why2_title: 'Esperti Multilingua',
+                why2_desc: 'Parliamo la tua lingua per una comunicazione chiara e trasparente.',
+                cta_contact: 'Contattaci',
+                cta_services: 'Servizi',
+                piva_text: 'P.IVA 03071340990',
+                footer_copy: '© Job Academy - Genova Sampierdarena',
+                agente_title: 'Diventa Agente Job Academy',
+                agente_motto: 'Guadagna facilitando la vita delle persone',
+                agente_cta: 'LAVORA CON NOI',
+                imprenditore_title: 'IMPRENDITORE JOB ACADEMY',
+                imprenditore_motto: 'Investi sul futuro, diventa responsabile d\'agenzia',
+                imprenditore_cta: 'APRI UNA AGENZIA'
+            },
+            en: {
+                header_tagline: 'Services for the Future',
+                hero_title: 'Build your <br/><span class="text-primary">future in Italy.</span>',
+                hero_subtitle1: 'Training, documents, work.',
+                hero_subtitle2: 'All in one place.',
+                lang_select_title: 'What language do you speak?',
+                services_heading: 'Our Services',
+                expertise_label: 'Expertise',
+                service1_title: 'TAX ASSISTANCE (CAF)',
+                service1_desc: 'Isee, Tax returns, Family allowance, Unemployment, Pensions, Disability, Bonuses.',
+                service2_title: 'MIGRATION SERVICES',
+                service2_desc: 'Residence permit, Citizenship & Family reunification, Digital ID, Residency.',
+                service3_title: 'WORK & FINANCE',
+                service3_desc: 'Job placement, Loans, Mortgages & Insurance, Salary-backed loans.',
+                service4_title: 'HOME & LEGAL',
+                service4_desc: 'Lease contracts, Legal aid & translations, Recognition of foreign qualifications.',
+                formazione_title: 'Professional<br/>Training',
+                cat1_title: 'Main Courses',
+                course1: 'CAF Operator Course',
+                course2: 'Job Academy Agency Manager',
+                course3: 'HACCP Course',
+                course4: 'Workplace Safety (Low Risk)',
+                cat2_title: 'Language Courses',
+                lang_course1: 'Italian for Foreigners',
+                lang_course2: 'English for Spanish Speakers',
+                lang_course3: 'Spanish & Arabic',
+                cat3_title: 'Practical Training',
+                pract_course1: 'Driving License Theory',
+                pract_course2: 'A2/B1 Exam Preparation',
+                pract_course3: 'Italian Language Certifications',
+                cat4_title: 'Extra',
+                extra_course1: 'Crochet Courses',
+                extra_course2: 'Online & Digital Skills',
+                why_title: 'Why Job Academy?',
+                why1_title: 'Multidisciplinary Services',
+                why1_desc: 'All the support you need in a single specialized center.',
+                why2_title: 'Multilingual Experts',
+                why2_desc: 'We speak your language for clear and transparent communication.',
+                cta_contact: 'Contact us',
+                cta_services: 'Services',
+                piva_text: 'VAT 03071340990',
+                footer_copy: '© Job Academy - Genoa Sampierdarena',
+                agente_title: 'Become a Job Academy Agent',
+                agente_motto: 'Earn by making people\'s lives easier',
+                agente_cta: 'WORK WITH US',
+                imprenditore_title: 'JOB ACADEMY ENTREPRENEUR',
+                imprenditore_motto: 'Invest in the future, become an agency manager',
+                imprenditore_cta: 'OPEN AN AGENCY'
+            },
+            es: {
+                header_tagline: 'Servicios para el Futuro',
+                hero_title: 'Construye tu <br/><span class="text-primary">futuro en Italia.</span>',
+                hero_subtitle1: 'Formación, documentos, trabajo.',
+                hero_subtitle2: 'Todo en un mismo lugar.',
+                lang_select_title: '¿Qué idioma hablas?',
+                services_heading: 'Nuestros Servicios',
+                expertise_label: 'Experiencia',
+                service1_title: 'CAF Y PATRONATO',
+                service1_desc: 'Isee, 730, Asignación Única, Naspi, Pensiones, Invalidez, Bonos, Ayudas.',
+                service2_title: 'SERVIZI MIGRATORI',
+                service2_desc: 'Permiso de residencia, Ciudadanía y Reagrupación, Spid / CIE y Residencia.',
+                service3_title: 'TRABAJO Y FINANZAS',
+                service3_desc: 'Empleo, Préstamos, Hipotecas y Seguros, Adelanto de nómina.',
+                service4_title: 'HOGAR Y LEGALES',
+                service4_desc: 'Contratos de alquiler, Asistencia legal y Traducciones, Títulos extranjeros.',
+                formazione_title: 'Formación<br/>Profesional',
+                cat1_title: 'Cursos Principales',
+                course1: 'Curso operador CAF/Patronato',
+                course2: 'Gestor Agencia Job Academy',
+                course3: 'Curso HACCP',
+                course4: 'Seguridad laboral',
+                cat2_title: 'Idiomas',
+                lang_course1: 'Italiano para extranjeros',
+                lang_course2: 'Inglés para hispanohablantes',
+                lang_course3: 'Español y Árabe',
+                cat3_title: 'Práctica',
+                pract_course1: 'Teoría Licencia Conducir',
+                pract_course2: 'Examen A2/B1',
+                pract_course3: 'Certificación Italiano',
+                cat4_title: 'Extra',
+                extra_course1: 'Crochet',
+                extra_course2: 'Cursos Online',
+                why_title: '¿Por qué Job Academy?',
+                why1_title: 'Servicios Multidisciplinarios',
+                why1_desc: 'Todo el apoyo en un centro especializado.',
+                why2_title: 'Expertos Multilingües',
+                why2_desc: 'Hablamos tu idioma para mayor claridad.',
+                cta_contact: 'Contáctanos',
+                cta_services: 'Servicios',
+                footer_copy: '© Job Academy - Génova',
+                agente_title: 'Conviértete en Agente de Job Academy',
+                agente_motto: 'Gana facilitando la vida de las personas',
+                agente_cta: 'TRABAJA CON NOSOTROS',
+                imprenditore_title: 'EMPRENDEDOR JOB ACADEMY',
+                imprenditore_motto: 'Invierte en el futuro, conviértete en gerente de agencia',
+                imprenditore_cta: 'ABRE UNA AGENCIA'
+            },
+            bn: {
+                header_tagline: 'ভবিষ্যতের জন্য পরিষেবা',
+                hero_title: 'ইতালিতে আপনার <br/><span class="text-primary">ভবিষ্যৎ গড়ুন।</span>',
+                hero_subtitle1: 'প্রশিক্ষণ, নথিপত্র, কাজ।',
+                hero_subtitle2: 'সবকিছু এক জায়গায়।',
+                lang_select_title: 'আপনি কোন ভাষায় কথা বলেন?',
+                services_heading: 'আমাদের সেবাসমূহ',
+                expertise_label: 'বিশেষজ্ঞতা',
+                service1_title: 'CAF এবং প্যাট্রোনেটো',
+                service1_desc: 'Isee, ট্যাক্স রিটার্ন, পারিবারিক ভাতা, বেকারত্ব ভাতা, পেনশন।',
+                service2_title: 'অভিবাসন সেবা',
+                service2_desc: 'স্টে পারমিট, নাগরিকত্ব এবং ফ্যামিলি রিইউনিয়ন, ডিজিটাল আইডি।',
+                service3_title: 'কাজ এবং অর্থায়ন',
+                service3_desc: 'চাকরি সহায়তা, ঋণ, মর্টগেজ এবং বীমা।',
+                service4_title: 'বাড়ি এবং আইনি সহায়তা',
+                service4_desc: 'ভাড়া চুক্তি, আইনি সহায়তা এবং অনুবাদ।',
+                formazione_title: 'পেশাদার<br/>প্রশিক্ষণ',
+                cat1_title: 'প্রধান কোর্স',
+                why_title: 'কেন জব একাডেমি?',
+                why1_title: 'বহুমুখী সেবা',
+                why1_desc: 'একটি বিশেষ কেন্দ্রে আপনার প্রয়োজনীয় সমস্ত সহায়তা।',
+                why2_title: 'বহুভাষী বিশেষজ্ঞ',
+                why2_desc: 'স্পষ্ট যোগাযোগের জন্য আমরা আপনার ভাষায় কথা বলি।',
+                cta_contact: 'যোগাযোগ করুন',
+                cta_services: 'সেবাসমূহ',
+                footer_copy: '© জব একাডেমি - জেনোয়া',
+                agente_title: 'জব একাডেমি এজেন্ট হন',
+                agente_motto: 'মানুষের জীবন সহজ করে আয় করুন',
+                agente_cta: 'আমাদের সাথে কাজ করুন',
+                imprenditore_title: 'জব একাডেমি উদ্যোক্তা',
+                imprenditore_motto: 'ভবিষ্যতে বিনিয়োগ করুন, একটি এজেন্সির ম্যানেজার হন',
+                imprenditore_cta: 'একটি এজেন্সি খুলুন'
+            },
+            ar: {
+                header_tagline: 'خدمات من أجل المستقبل',
+                hero_title: 'ابنِ <br/><span class="text-primary">مستقبلك في إيطاليا.</span>',
+                hero_subtitle1: 'تدريب، وثائق، عمل.',
+                hero_subtitle2: 'كل شيء في مكان واحد.',
+                lang_select_title: 'ما هي لغتك؟',
+                services_heading: 'خدماتنا',
+                expertise_label: 'خبرة',
+                service1_title: 'المساعدة الضريبية',
+                service1_desc: 'Isee، الإقرارات الضريبية، البدلات العائلية، البطالة، المعاشات التقاعدية.',
+                service2_title: 'خدمات الهجرة',
+                service2_desc: 'تصريح الإقامة، الجنسية ولم الشمل، الهوية الرقمية والسكن.',
+                service3_title: 'العمل والتمويل',
+                service3_desc: 'توفير فرص العمل، القروض، الرهون العقارية والتأمين.',
+                service4_title: 'السكن والقانون',
+                service4_desc: 'عقود الإيجار، المساعدة القانونية والترجمة، معادلة الشهادات.',
+                formazione_title: 'التدريب<br/>المهني',
+                why_title: 'لماذا جوب أكاديمي؟',
+                why1_title: 'خدمات متعددة التخصصات',
+                why1_desc: 'كل الدعم الذي تحتاجه في مركز متخصص واحد.',
+                why2_title: 'خبراء متعددو اللغات',
+                why2_desc: 'نتحدث لغتك لتواصل واضح وشفاف.',
+                cta_contact: 'اتصل بنا',
+                cta_services: 'الخدمات',
+                footer_copy: '© جوب أكاديمي - جنوة',
+                agente_title: 'كن وكيلاً لجوب أكاديمي',
+                agente_motto: 'اربح من خلال تسهيل حياة الناس',
+                agente_cta: 'اعمل معنا',
+                imprenditore_title: 'رائد أعمال جوب أكاديمي',
+                imprenditore_motto: 'استثمر في المستقبل، كن مديراً لوكالة',
+                imprenditore_cta: 'افتح وكالة'
+            },
+            fr: {
+                header_tagline: 'Services pour l\'Avenir',
+                hero_title: 'Construisez votre <br/><span class="text-primary">futur en Italie.</span>',
+                hero_subtitle1: 'Formation, documents, travail.',
+                hero_subtitle2: 'Tout au même endroit.',
+                lang_select_title: 'Quelle langue parlez-vous?',
+                services_heading: 'Nos Services',
+                expertise_label: 'Expertise',
+                service1_title: 'ASSISTANCE FISCALE',
+                service1_desc: 'Isee, 730, Allocations, Chômage, Retraites, Invalidité, Bonus.',
+                service2_title: 'SERVICES MIGRATOIRES',
+                service2_desc: 'Titre de séjour, Citoyenneté & Regroupement, Spid / CIE & Résidence.',
+                service3_title: 'TRAVAIL & FINANCE',
+                service3_desc: 'Emploi, Prêts, Hypothèques & Assurances, Prêt sur salaire.',
+                service4_title: 'MAISON & JURIDIQUE',
+                service4_desc: 'Contrats de location, Assistance juridique, Reconnaissance des diplômes.',
+                formazione_title: 'Formation<br/>Professionnelle',
+                cat1_title: 'Cours Principaux',
+                why_title: 'Pourquoi Job Academy?',
+                why1_title: 'Services Pluridisciplinaires',
+                why1_desc: 'Tout le soutien dont vous avez besoin dans un seul centre.',
+                why2_title: 'Experts Multilingues',
+                why2_desc: 'Nous parlons votre langue pour une communication claire.',
+                cta_contact: 'Contactez-nous',
+                cta_services: 'Services',
+                footer_copy: '© Job Academy - Gênes',
+                agente_title: 'Devenez agent Job Academy',
+                agente_motto: 'Gagnez de l\'argent en facilitant la vie des gens',
+                agente_cta: 'TRAVAILLEZ AVEC NOUS',
+                imprenditore_title: 'ENTREPRENEUR JOB ACADEMY',
+                imprenditore_motto: 'Investissez dans l\'avenir, devenez responsable d\'agence',
+                imprenditore_cta: 'OUVREZ UNE AGENCE'
+            },
+            ur: {
+                header_tagline: 'مستقبل کے لیے خدمات',
+                hero_title: 'اٹلی میں اپنا <br/><span class="text-primary">مستقبل بنائیں۔</span>',
+                hero_subtitle1: 'تربیت، دستاویزات، کام۔',
+                hero_subtitle2: 'سب کچھ ایک جگہ۔',
+                lang_select_title: 'آپ کون سی زبان بولتے ہیں؟',
+                services_heading: 'ہماری خدمات',
+                expertise_label: 'مہارت',
+                service1_title: 'ٹیکس امداد (CAF)',
+                service1_desc: 'ٹیکس ریٹرن، فیملی الاؤنس، بے روزگاری الاؤنس، پنشن، بونس۔',
+                service2_title: 'مائگریشن سروسز',
+                service2_desc: 'رہائشی اجازت نامہ، شہریت، فیملی ری یونین، ڈیجیٹل آئی ڈی۔',
+                service3_title: 'کام اور فنانس',
+                service3_desc: 'ملازمت، قرضے، مارگیج اور انشورنس۔',
+                service4_title: 'گھر اور قانونی',
+                service4_desc: 'کرایہ کے معاہدے، قانونی امداد، ڈگری کی پہچان۔',
+                formazione_title: 'پیشہ ورانہ<br/>تربیت',
+                why_title: 'جوب اکیڈمی کیوں؟',
+                why1_title: 'کثیر الشعبہ خدمات',
+                why1_desc: 'ایک ہی مرکز میں آپ کی ضرورت کی تمام مدد۔',
+                why2_title: 'کثیر لسانی ماہرین',
+                why2_desc: 'واضح رابطے کے لیے ہم آپ کی زبان بولتے ہیں۔',
+                cta_contact: 'رابطہ کریں',
+                cta_services: 'خدمات',
+                footer_copy: '© جوب اکیڈمی - جینوا',
+                agente_title: 'جوب اکیڈمی ایجنٹ بنیں',
+                agente_motto: 'لوگوں کی زندگی آسان بنا کر کمائیں',
+                agente_cta: 'ہمارے ساتھ کام کریں',
+                imprenditore_title: 'جوب اکیڈمی انٹرپرینیور',
+                imprenditore_motto: 'مستقبل میں سرمایہ کاری کریں، ایجنسی مینیجر بنیں',
+                imprenditore_cta: 'ایجنسی کھولیں'
+            },
+            sq: {
+                header_tagline: 'Shërbime për të Ardhmen',
+                hero_title: 'Ndërtoni <br/><span class="text-primary">të ardhmen tuaj në Itali.</span>',
+                hero_subtitle1: 'Trajnim, dokumente, punë.',
+                hero_subtitle2: 'Gjithçka në një vend.',
+                lang_select_title: 'Çfarë gjuhe flisni?',
+                services_heading: 'Shërbimet Tona',
+                expertise_label: 'Ekspertizë',
+                service1_title: 'CAF & PATRONATO',
+                service1_desc: 'Isee, 730, Ndihmë Familjare, Papunësi, Pensione, Invaliditet.',
+                service2_title: 'SHËRBIME MIGRACIONI',
+                service2_desc: 'Leje qëndrimi, Shtetësi & Bashkim familjar, Spid / CIE.',
+                service3_title: 'PUNË & FINANCË',
+                service3_desc: 'Punësim, Kredi, Hipoteka & Sigurime, Kredi me garanci page.',
+                service4_title: 'SHTËPI & LIGJORE',
+                service4_desc: 'Kontrata qiraje, Asistencë ligjore, Njohje diplomash.',
+                formazione_title: 'Trajnim<br/>Profesional',
+                why_title: 'Pse Job Academy?',
+                why1_title: 'Shërbime Multidisiplinare',
+                why1_desc: 'Gjithë mbështetja që ju nevojitet në një qendër.',
+                why2_title: 'Ekspertë Shumëgjuhësh',
+                why2_desc: 'Ne flasim gjuhën tuaj për komunikim të qartë.',
+                cta_contact: 'Na kontaktoni',
+                cta_services: 'Shërbimet',
+                footer_copy: '© Job Academy - Genova',
+                agente_title: 'Bëhu agjent i Job Academy',
+                agente_motto: 'Fitoni duke lehtësuar jetën e njerëzve',
+                agente_cta: 'PUNONI ME NE',
+                imprenditore_title: 'SIPËRMARRËS I JOB ACADEMY',
+                imprenditore_motto: 'Investoni në të ardhmen, bëhuni menaxher agjencie',
+                imprenditore_cta: 'HAPNI NJË AGJENSI'
+            },
+            uk: {
+                header_tagline: 'Послуги для майбутнього',
+                hero_title: 'Побудуйте своє <br/><span class="text-primary">майбутнє в Італії.</span>',
+                hero_subtitle1: 'Навчання, документи, робота.',
+                hero_subtitle2: 'Все в одному місці.',
+                lang_select_title: 'Якою мовою ви розмовляєте?',
+                services_heading: 'Наші послуги',
+                expertise_label: 'Експертиза',
+                service1_title: 'CAF ТА ПАТРОНАТ',
+                service1_desc: 'Isee, податкові декларації, допомога сім\'ям, пенсії.',
+                service2_title: 'МІГРАЦІЙНІ ПОСЛУГИ',
+                service2_desc: 'Посвідка на проживання, громадянство, возз\'єднання сім\'ї.',
+                service3_title: 'РОБОТА ТА ФІНАНСИ',
+                service3_desc: 'Працевлаштування, кредити, іпотека, страхування.',
+                service4_title: 'ДІМ ТА ЮРИДИЧНІ ПИТАННЯ',
+                service4_desc: 'Оренда, юридична допомога, визнання дипломів.',
+                formazione_title: 'Професійне<br/>навчання',
+                why_title: 'Чому саме Job Academy?',
+                why1_title: 'Мультидисциплінарні послуги',
+                why1_desc: 'Уся підтримка, яка вам потрібна, в одному центрі.',
+                why2_title: 'Мультимовні експерти',
+                why2_desc: 'Ми розмовляємо вашою мовою для кращого розуміння.',
+                cta_contact: 'Зв\'яжіться з нами',
+                cta_services: 'Послуги',
+                footer_copy: '© Job Academy - Генуя',
+                agente_title: 'Станьте агентом Job Academy',
+                agente_motto: 'Заробляйте, полегшуючи життя людей',
+                agente_cta: 'ПРАЦЮЙТЕ З НАМИ',
+                imprenditore_title: 'ПІДПРИЄМЕЦЬ JOB ACADEMY',
+                imprenditore_motto: 'Інвестуйте в майбутнє, станьте керівником агентства',
+                imprenditore_cta: 'ВІДКРИЙТЕ АГЕНТСТВО'
+            },
+            ka: {
+                header_tagline: 'სერვისები მომავლისთვის',
+                hero_title: 'ააშენეთ თქვენი <br/><span class="text-primary">მომავალი იტალიაში.</span>',
+                hero_subtitle1: 'ტრენინგი, დოკუმენტები, სამუშაო.',
+                hero_subtitle2: 'ყველაფერი ერთ ადგილზე.',
+                lang_select_title: 'რომელ ენაზე საუბრობთ?',
+                services_heading: 'ჩვენი სერვისები',
+                expertise_label: 'ექსპერტიზა',
+                service1_title: 'CAF და პატრონატი',
+                service1_desc: 'Isee, დეკლარაციები, ოჯახის დახმარება, პენსიები.',
+                service2_title: 'მიგრაციის სერვისები',
+                service2_desc: 'ბინადრობა, მოქალაქეობა, ოჯახის გაერთიანება.',
+                service3_title: 'სამუშაო და ფინანსები',
+                service3_desc: 'დასაქმება, სესხები, იპოთეკა, დაზღვევა.',
+                service4_title: 'სახლი და იურიდიული',
+                service4_desc: 'ბინის ქირაობა, იურიდიული დახმარება, აღიარება.',
+                formazione_title: 'პროფესიული<br/>ტრენინგი',
+                why_title: 'რატომ Job Academy?',
+                why1_title: 'მრავალმხრივი სერვისები',
+                why1_desc: 'ყველა საჭირო მხარდაჭერა ერთ ცენტრში.',
+                why2_title: 'მრავალენოვანი ექსპერტები',
+                why2_desc: 'ჩვენ ვსაუბრობთ თქვენს ენაზე.',
+                cta_contact: 'დაგვიკავშირდით',
+                cta_services: 'სერვისები',
+                footer_copy: '© Job Academy - გენუა',
+                agente_title: 'გახდით Job Academy-ის აგენტი',
+                agente_motto: 'იშოვე ფული ხალხის ცხოვრების გამარტივებით',
+                agente_cta: 'იმუშავეთ ჩვენთან',
+                imprenditore_title: 'JOB ACADEMY-ის მეწარმე',
+                imprenditore_motto: 'ინვესტიცია მომავალში, გახდი სააგენტოს მენეჯერი',
+                imprenditore_cta: 'გახსენით სააგენტო'
+            },
+            ro: {
+                header_tagline: 'Servicii pentru Viitor',
+                hero_title: 'Construiește-ți <br/><span class="text-primary">viitorul în Italia.</span>',
+                hero_subtitle1: 'Formare, documente, muncă.',
+                hero_subtitle2: 'Totul într-un singur loc.',
+                lang_select_title: 'Ce limbă vorbiți?',
+                services_heading: 'Serviciile Noastre',
+                expertise_label: 'Expertiză',
+                service1_title: 'CAF & PATRONAT',
+                service1_desc: 'Isee, 730, Alocații, Șomaj, Pensii, Invaliditate, Bonusuri.',
+                service2_title: 'SERVICII MIGRAȚIE',
+                service2_desc: 'Permis de ședere, Cetățenie, Reîntregire familie, Rezidență.',
+                service3_title: 'MUNCĂ & FINANȚE',
+                service3_desc: 'Angajare, Împrumuturi, Ipoteci, Asigurări.',
+                service4_title: 'CASĂ & JURIDIC',
+                service4_desc: 'Contracte chirie, Asistență juridică, Recunoaștere studii.',
+                formazione_title: 'Formare<br/>Profesională',
+                why_title: 'De ce Job Academy?',
+                why1_title: 'Servicii Multidisciplinare',
+                why1_desc: 'Tot sprijinul necesar într-un singur centru.',
+                why2_title: 'Experți Multilingvi',
+                why2_desc: 'Vorbim limba ta pentru claritate.',
+                cta_contact: 'Contactați-ne',
+                cta_services: 'Servicii',
+                footer_copy: '© Job Academy - Genova',
+                agente_title: 'Deveniți agent Job Academy',
+                agente_motto: 'Câștigați bani facilitând viața oamenilor',
+                agente_cta: 'LUCREAZĂ CU NOI',
+                imprenditore_title: 'ANTREPRENOR JOB ACADEMY',
+                imprenditore_motto: 'Investiți în viitor, deveniți manager de agenție',
+                imprenditore_cta: 'DESCHIDE O AGENȚIE'
+            },
+            ru: {
+                header_tagline: 'Услуги для будущего',
+                hero_title: 'Постройте свое <br/><span class="text-primary">будущее в Италии.</span>',
+                hero_subtitle1: 'Обучение, документы, работа.',
+                hero_subtitle2: 'Все в одном месте.',
+                lang_select_title: 'На каком языке вы говорите?',
+                services_heading: 'Наши услуги',
+                expertise_label: 'Экспертиза',
+                service1_title: 'CAF И ПАТРОНАТ',
+                service1_desc: 'Isee, декларации, семейные пособия, пенсии, льготы.',
+                service2_title: 'МИГРАЦИОННЫЕ УСЛУГИ',
+                service2_desc: 'ВНЖ, гражданство, воссоединение семьи, прописка.',
+                service3_title: 'РАБОТА И ФИНАНСЫ',
+                service3_desc: 'Трудоустройство, займы, ипотека, страхование.',
+                service4_title: 'ЖИЛЬЕ И ПРАВО',
+                service4_desc: 'Аренда, юридическая помощь, признание дипломов.',
+                formazione_title: 'Профессиональное<br/>обучение',
+                why_title: 'Почему Job Academy?',
+                why1_title: 'Многопрофильные услуги',
+                why1_desc: 'Вся поддержка в одном специализированном центре.',
+                why2_title: 'Многоязычные эксперты',
+                why2_desc: 'Мы говорим на вашем языке для прозрачности.',
+                cta_contact: 'Связаться с нами',
+                cta_services: 'Услуги',
+                footer_copy: '© Job Academy - Генуя',
+                agente_title: 'Станьте агентом Job Academy',
+                agente_motto: 'Зарабатывайте, облегчая жизнь людей',
+                agente_cta: 'РАБОТАЙТЕ С НАМИ',
+                imprenditore_title: 'ПРЕДПРИНИМАТЕЛЬ JOB ACADEMY',
+                imprenditore_motto: 'Инвестируйте в будущее, станьте руководителем агентства',
+                imprenditore_cta: 'ОТКРОЙТЕ АГЕНТСТВО'
+            },
+            tr: {
+                header_tagline: 'Gelecek İçin Hizmetler',
+                hero_title: 'İtalya\'da <br/><span class="text-primary">geleceğinizi kurun.</span>',
+                hero_subtitle1: 'Eğitim, belgeler, iş.',
+                hero_subtitle2: 'Her şey tek bir yerde.',
+                lang_select_title: 'Hangi dili konuşuyorsunuz?',
+                services_heading: 'Hizmetlerimiz',
+                expertise_label: 'Uzmanlık',
+                service1_title: 'CAF VE PATRONAT',
+                service1_desc: 'Isee, vergi iadesi, aile yardımı, emeklilik, bonuslar.',
+                service2_title: 'GÖÇMENLİK HİZMETLERİ',
+                service2_desc: 'Oturma izni, vatandaşlık, aile birleşimi, ikamet.',
+                service3_title: 'İŞ VE FİNANS',
+                service3_desc: 'İş bulma, krediler, konut kredisi, sigorta.',
+                service4_title: 'EV VE HUKUK',
+                service4_desc: 'Kira sözleşmeleri, hukuki yardım, diploma tanıma.',
+                formazione_title: 'Mesleki<br/>Eğitim',
+                why_title: 'Neden Job Academy?',
+                why1_title: 'Çok Disiplinli Hizmetler',
+                why1_desc: 'İhtiyacınız olan tüm destek tek bir merkezde.',
+                why2_title: 'Çok Dilli Uzmanlar',
+                why2_desc: 'Şeffaf iletişim için dilinizi konuşuyoruz.',
+                cta_contact: 'Bize ulaşın',
+                cta_services: 'Hizmetler',
+                footer_copy: '© Job Academy - Cenova',
+                agente_title: 'Job Academy Temsilcisi Olun',
+                agente_motto: 'İnsanların hayatını kolaylaştırarak kazanın',
+                agente_cta: 'BİZİMLE ÇALIŞIN',
+                imprenditore_title: 'JOB ACADEMY GİRİŞİMCİSİ',
+                imprenditore_motto: 'Geleceğe yatırım yapın, acente müdürü olun',
+                imprenditore_cta: 'ACENTE AÇIN'
+            },
+            pt: {
+                header_tagline: 'Serviços para o Futuro',
+                hero_title: 'Construa o seu <br/><span class="text-primary">futuro na Itália.</span>',
+                hero_subtitle1: 'Formação, documentos, trabalho.',
+                hero_subtitle2: 'Tudo em um só lugar.',
+                lang_select_title: 'Qual idioma você fala?',
+                services_heading: 'Nossos Serviços</script></body></html>
