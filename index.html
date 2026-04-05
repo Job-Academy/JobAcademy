@@ -1,7 +1,6 @@
-<html lang="it"><head></head><body class="bg-surface font-body text-on-surface">```html
+<!DOCTYPE html>
 
-
-
+<html lang="it"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -63,6 +62,8 @@
             background-size: 1.5em 1.5em;
         }
     </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
 <header class="bg-white sticky top-0 z-[60] px-5 py-4 border-b border-gray-100 shadow-sm flex justify-between items-center">
 <div class="flex items-center gap-3">
 <img alt="Job Academy Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ugovjEiwzeThAYa9mZ0mvPOo8QEY4AnSgT_v9vxA4JBXcCwpDNPUxXAfqimVK-_ELL914o82S8_DgbqW-W2J0Y8uz9I7oQPsHlLHXR4_4YHiKjlyMYR_-_ttofEDySb33N3kMbxtTmlpbRevh9Bex7iOxKbr3dEXeMg7p-okyMhtk_cLIX0g2ooT1NgG51XXVSehRuU1Pyq7B4QUAaqoFYyc5XOI914i1keHGMF_SPIhqzlJRxzNyQMFLsp24G6C5UsUd6fxNokqw"/>
@@ -221,49 +222,6 @@
 </div>
 </div>
 </section>
-<!-- New Section: Diventa Agente Job Academy -->
-<section class="px-5">
-<div class="relative bg-navy p-8 rounded-[2.5rem] text-white shadow-2xl overflow-hidden card-pattern">
-<div class="relative z-10">
-<div class="flex items-center gap-4 mb-6">
-<span class="material-symbols-outlined text-4xl opacity-40" data-icon="handshake">handshake</span>
-<h3 class="font-headline text-2xl font-black uppercase tracking-tight" data-translate="agente_title">Diventa Agente Job Academy</h3>
-</div>
-<p class="text-white/80 font-bold text-lg leading-tight mb-8" data-translate="agente_motto">Guadagna facilitando la vita delle persone</p>
-<div class="flex flex-wrap gap-4 mb-10 opacity-60">
-<span class="material-symbols-outlined text-3xl" data-icon="person_add">person_add</span>
-<span class="material-symbols-outlined text-3xl" data-icon="euro">euro</span>
-<span class="material-symbols-outlined text-3xl" data-icon="volunteer_activism">volunteer_activism</span>
-</div>
-<a class="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-5 rounded-2xl shadow-xl shadow-primary/30 active:scale-95 transition-all w-full" href="#">
-<span class="material-symbols-outlined text-2xl" data-icon="work">work</span>
-<span class="text-base font-black uppercase tracking-widest" data-translate="agente_cta">LAVORA CON NOI</span>
-</a>
-</div>
-</div>
-</section>
-<!-- New Section: IMPRENDITORE JOB ACADEMY -->
-<section class="px-5">
-<div class="relative bg-slate-800 p-8 rounded-[2.5rem] text-white shadow-2xl overflow-hidden border border-white/5">
-<div class="absolute top-0 right-0 p-8 opacity-10">
-<span class="material-symbols-outlined text-[120px]" data-icon="domain">domain</span>
-</div>
-<div class="relative z-10">
-<div class="flex items-center gap-4 mb-6">
-<span class="material-symbols-outlined text-4xl opacity-40" data-icon="apartment">apartment</span>
-<h3 class="font-headline text-2xl font-black uppercase tracking-tight" data-translate="imprenditore_title">IMPRENDITORE JOB ACADEMY</h3>
-</div>
-<p class="text-white/80 font-bold text-lg leading-tight mb-8" data-translate="imprenditore_motto">Investi sul futuro, diventa responsabile d'agenzia</p>
-<div class="flex items-center gap-6 mb-10 opacity-60">
-<span class="material-symbols-outlined text-3xl" data-icon="trending_up">trending_up</span>
-<span class="material-symbols-outlined text-3xl" data-icon="storefront">storefront</span>
-</div>
-<a class="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-5 rounded-2xl shadow-xl shadow-primary/30 active:scale-95 transition-all w-full" href="#">
-<span class="text-base font-black uppercase tracking-widest" data-translate="imprenditore_cta">APRI UNA AGENZIA</span>
-</a>
-</div>
-</div>
-</section>
 <section class="px-5">
 <div class="relative bg-secondary p-8 rounded-[2.5rem] text-white shadow-2xl shadow-secondary/40 overflow-hidden">
 <div class="relative z-10">
@@ -377,13 +335,7 @@
                 cta_contact: 'Contattaci',
                 cta_services: 'Servizi',
                 piva_text: 'P.IVA 03071340990',
-                footer_copy: '© Job Academy - Genova Sampierdarena',
-                agente_title: 'Diventa Agente Job Academy',
-                agente_motto: 'Guadagna facilitando la vita delle persone',
-                agente_cta: 'LAVORA CON NOI',
-                imprenditore_title: 'IMPRENDITORE JOB ACADEMY',
-                imprenditore_motto: 'Investi sul futuro, diventa responsabile d\'agenzia',
-                imprenditore_cta: 'APRI UNA AGENZIA'
+                footer_copy: '© Job Academy - Genova Sampierdarena'
             },
             en: {
                 header_tagline: 'Services for the Future',
@@ -426,13 +378,7 @@
                 cta_contact: 'Contact us',
                 cta_services: 'Services',
                 piva_text: 'VAT 03071340990',
-                footer_copy: '© Job Academy - Genoa Sampierdarena',
-                agente_title: 'Become a Job Academy Agent',
-                agente_motto: 'Earn by making people\'s lives easier',
-                agente_cta: 'WORK WITH US',
-                imprenditore_title: 'JOB ACADEMY ENTREPRENEUR',
-                imprenditore_motto: 'Invest in the future, become an agency manager',
-                imprenditore_cta: 'OPEN AN AGENCY'
+                footer_copy: '© Job Academy - Genoa Sampierdarena'
             },
             es: {
                 header_tagline: 'Servicios para el Futuro',
@@ -474,13 +420,7 @@
                 why2_desc: 'Hablamos tu idioma para mayor claridad.',
                 cta_contact: 'Contáctanos',
                 cta_services: 'Servicios',
-                footer_copy: '© Job Academy - Génova',
-                agente_title: 'Conviértete en Agente de Job Academy',
-                agente_motto: 'Gana facilitando la vida de las personas',
-                agente_cta: 'TRABAJA CON NOSOTROS',
-                imprenditore_title: 'EMPRENDEDOR JOB ACADEMY',
-                imprenditore_motto: 'Invierte en el futuro, conviértete en gerente de agencia',
-                imprenditore_cta: 'ABRE UNA AGENCIA'
+                footer_copy: '© Job Academy - Génova'
             },
             bn: {
                 header_tagline: 'ভবিষ্যতের জন্য পরিষেবা',
@@ -507,13 +447,7 @@
                 why2_desc: 'স্পষ্ট যোগাযোগের জন্য আমরা আপনার ভাষায় কথা বলি।',
                 cta_contact: 'যোগাযোগ করুন',
                 cta_services: 'সেবাসমূহ',
-                footer_copy: '© জব একাডেমি - জেনোয়া',
-                agente_title: 'জব একাডেমি এজেন্ট হন',
-                agente_motto: 'মানুষের জীবন সহজ করে আয় করুন',
-                agente_cta: 'আমাদের সাথে কাজ করুন',
-                imprenditore_title: 'জব একাডেমি উদ্যোক্তা',
-                imprenditore_motto: 'ভবিষ্যতে বিনিয়োগ করুন, একটি এজেন্সির ম্যানেজার হন',
-                imprenditore_cta: 'একটি এজেন্সি খুলুন'
+                footer_copy: '© জব একাডেমি - জেনোয়া'
             },
             ar: {
                 header_tagline: 'خدمات من أجل المستقبل',
@@ -539,13 +473,7 @@
                 why2_desc: 'نتحدث لغتك لتواصل واضح وشفاف.',
                 cta_contact: 'اتصل بنا',
                 cta_services: 'الخدمات',
-                footer_copy: '© جوب أكاديمي - جنوة',
-                agente_title: 'كن وكيلاً لجوب أكاديمي',
-                agente_motto: 'اربح من خلال تسهيل حياة الناس',
-                agente_cta: 'اعمل معنا',
-                imprenditore_title: 'رائد أعمال جوب أكاديمي',
-                imprenditore_motto: 'استثمر في المستقبل، كن مديراً لوكالة',
-                imprenditore_cta: 'افتح وكالة'
+                footer_copy: '© جوب أكاديمي - جنوة'
             },
             fr: {
                 header_tagline: 'Services pour l\'Avenir',
@@ -572,13 +500,7 @@
                 why2_desc: 'Nous parlons votre langue pour une communication claire.',
                 cta_contact: 'Contactez-nous',
                 cta_services: 'Services',
-                footer_copy: '© Job Academy - Gênes',
-                agente_title: 'Devenez agent Job Academy',
-                agente_motto: 'Gagnez de l\'argent en facilitant la vie des gens',
-                agente_cta: 'TRAVAILLEZ AVEC NOUS',
-                imprenditore_title: 'ENTREPRENEUR JOB ACADEMY',
-                imprenditore_motto: 'Investissez dans l\'avenir, devenez responsable d\'agence',
-                imprenditore_cta: 'OUVREZ UNE AGENCE'
+                footer_copy: '© Job Academy - Gênes'
             },
             ur: {
                 header_tagline: 'مستقبل کے لیے خدمات',
@@ -604,13 +526,7 @@
                 why2_desc: 'واضح رابطے کے لیے ہم آپ کی زبان بولتے ہیں۔',
                 cta_contact: 'رابطہ کریں',
                 cta_services: 'خدمات',
-                footer_copy: '© جوب اکیڈمی - جینوا',
-                agente_title: 'جوب اکیڈمی ایجنٹ بنیں',
-                agente_motto: 'لوگوں کی زندگی آسان بنا کر کمائیں',
-                agente_cta: 'ہمارے ساتھ کام کریں',
-                imprenditore_title: 'جوب اکیڈمی انٹرپرینیور',
-                imprenditore_motto: 'مستقبل میں سرمایہ کاری کریں، ایجنسی مینیجر بنیں',
-                imprenditore_cta: 'ایجنسی کھولیں'
+                footer_copy: '© جوب اکیڈمی - جینوا'
             },
             sq: {
                 header_tagline: 'Shërbime për të Ardhmen',
@@ -636,13 +552,7 @@
                 why2_desc: 'Ne flasim gjuhën tuaj për komunikim të qartë.',
                 cta_contact: 'Na kontaktoni',
                 cta_services: 'Shërbimet',
-                footer_copy: '© Job Academy - Genova',
-                agente_title: 'Bëhu agjent i Job Academy',
-                agente_motto: 'Fitoni duke lehtësuar jetën e njerëzve',
-                agente_cta: 'PUNONI ME NE',
-                imprenditore_title: 'SIPËRMARRËS I JOB ACADEMY',
-                imprenditore_motto: 'Investoni në të ardhmen, bëhuni menaxher agjencie',
-                imprenditore_cta: 'HAPNI NJË AGJENSI'
+                footer_copy: '© Job Academy - Genova'
             },
             uk: {
                 header_tagline: 'Послуги для майбутнього',
@@ -668,13 +578,7 @@
                 why2_desc: 'Ми розмовляємо вашою мовою для кращого розуміння.',
                 cta_contact: 'Зв\'яжіться з нами',
                 cta_services: 'Послуги',
-                footer_copy: '© Job Academy - Генуя',
-                agente_title: 'Станьте агентом Job Academy',
-                agente_motto: 'Заробляйте, полегшуючи життя людей',
-                agente_cta: 'ПРАЦЮЙТЕ З НАМИ',
-                imprenditore_title: 'ПІДПРИЄМЕЦЬ JOB ACADEMY',
-                imprenditore_motto: 'Інвестуйте в майбутнє, станьте керівником агентства',
-                imprenditore_cta: 'ВІДКРИЙТЕ АГЕНТСТВО'
+                footer_copy: '© Job Academy - Генуя'
             },
             ka: {
                 header_tagline: 'სერვისები მომავლისთვის',
@@ -700,13 +604,7 @@
                 why2_desc: 'ჩვენ ვსაუბრობთ თქვენს ენაზე.',
                 cta_contact: 'დაგვიკავშირდით',
                 cta_services: 'სერვისები',
-                footer_copy: '© Job Academy - გენუა',
-                agente_title: 'გახდით Job Academy-ის აგენტი',
-                agente_motto: 'იშოვე ფული ხალხის ცხოვრების გამარტივებით',
-                agente_cta: 'იმუშავეთ ჩვენთან',
-                imprenditore_title: 'JOB ACADEMY-ის მეწარმე',
-                imprenditore_motto: 'ინვესტიცია მომავალში, გახდი სააგენტოს მენეჯერი',
-                imprenditore_cta: 'გახსენით სააგენტო'
+                footer_copy: '© Job Academy - გენუა'
             },
             ro: {
                 header_tagline: 'Servicii pentru Viitor',
@@ -732,13 +630,7 @@
                 why2_desc: 'Vorbim limba ta pentru claritate.',
                 cta_contact: 'Contactați-ne',
                 cta_services: 'Servicii',
-                footer_copy: '© Job Academy - Genova',
-                agente_title: 'Deveniți agent Job Academy',
-                agente_motto: 'Câștigați bani facilitând viața oamenilor',
-                agente_cta: 'LUCREAZĂ CU NOI',
-                imprenditore_title: 'ANTREPRENOR JOB ACADEMY',
-                imprenditore_motto: 'Investiți în viitor, deveniți manager de agenție',
-                imprenditore_cta: 'DESCHIDE O AGENȚIE'
+                footer_copy: '© Job Academy - Genova'
             },
             ru: {
                 header_tagline: 'Услуги для будущего',
@@ -764,13 +656,7 @@
                 why2_desc: 'Мы говорим на вашем языке для прозрачности.',
                 cta_contact: 'Связаться с нами',
                 cta_services: 'Услуги',
-                footer_copy: '© Job Academy - Генуя',
-                agente_title: 'Станьте агентом Job Academy',
-                agente_motto: 'Зарабатывайте, облегчая жизнь людей',
-                agente_cta: 'РАБОТАЙТЕ С НАМИ',
-                imprenditore_title: 'ПРЕДПРИНИМАТЕЛЬ JOB ACADEMY',
-                imprenditore_motto: 'Инвестируйте в будущее, станьте руководителем агентства',
-                imprenditore_cta: 'ОТКРОЙТЕ АГЕНТСТВО'
+                footer_copy: '© Job Academy - Генуя'
             },
             tr: {
                 header_tagline: 'Gelecek İçin Hizmetler',
@@ -796,13 +682,7 @@
                 why2_desc: 'Şeffaf iletişim için dilinizi konuşuyoruz.',
                 cta_contact: 'Bize ulaşın',
                 cta_services: 'Hizmetler',
-                footer_copy: '© Job Academy - Cenova',
-                agente_title: 'Job Academy Temsilcisi Olun',
-                agente_motto: 'İnsanların hayatını kolaylaştırarak kazanın',
-                agente_cta: 'BİZİMLE ÇALIŞIN',
-                imprenditore_title: 'JOB ACADEMY GİRİŞİMCİSİ',
-                imprenditore_motto: 'Geleceğe yatırım yapın, acente müdürü olun',
-                imprenditore_cta: 'ACENTE AÇIN'
+                footer_copy: '© Job Academy - Cenova'
             },
             pt: {
                 header_tagline: 'Serviços para o Futuro',
@@ -810,4 +690,101 @@
                 hero_subtitle1: 'Formação, documentos, trabalho.',
                 hero_subtitle2: 'Tudo em um só lugar.',
                 lang_select_title: 'Qual idioma você fala?',
-                services_heading: 'Nossos Serviços</script></body></html>
+                services_heading: 'Nossos Serviços',
+                expertise_label: 'Experiência',
+                service1_title: 'CAF & PATRONATO',
+                service1_desc: 'Isee, 730, Abono de Família, Pensões, Invalidez, Bónus.',
+                service2_title: 'SERVIÇOS DE MIGRAÇÃO',
+                service2_desc: 'Visto, Cidadania & Reagrupamento familiar, Residência.',
+                service3_title: 'TRABALHO & FINANÇAS',
+                service3_desc: 'Emprego, Empréstimos, Crédito Habitação, Seguros.',
+                service4_title: 'CASA & JURÍDICO',
+                service4_desc: 'Contratos de aluguel, Apoio jurídico, Reconhecimento de títulos.',
+                formazione_title: 'Formação<br/>Profissional',
+                why_title: 'Por que a Job Academy?',
+                why1_title: 'Serviços Multidisciplinares',
+                why1_desc: 'Todo o suporte necessário num único centro.',
+                why2_title: 'Especialistas Multilíngues',
+                why2_desc: 'Falamos a sua língua para uma comunicação clara.',
+                cta_contact: 'Contacte-nos',
+                cta_services: 'Serviços',
+                footer_copy: '© Job Academy - Génova'
+            },
+            tl: {
+                header_tagline: 'Mga Serbisyo para sa Kinabukasan',
+                hero_title: 'Buuin ang iyong <br/><span class="text-primary">kinabukasan sa Italya.</span>',
+                hero_subtitle1: 'Pagsasanay, dokumento, trabaho.',
+                hero_subtitle2: 'Lahat sa isang lugar.',
+                lang_select_title: 'Anong wika ang iyong sinasalita?',
+                services_heading: 'Aming mga Serbisyo',
+                expertise_label: 'Expertise',
+                service1_title: 'CAF AT PATRONATO',
+                service1_desc: 'Isee, tax return, family allowance, pensyon, disability, bonus.',
+                service2_title: 'MIGRATION SERVICES',
+                service2_desc: 'Residence permit, citizenship, family reunification, residency.',
+                service3_title: 'TRABAHO AT FINANCE',
+                service3_desc: 'Job placement, loans, mortgage, insurance.',
+                service4_title: 'BAHAY AT LEGAL',
+                service4_desc: 'Rental contracts, legal aid, recognition of degrees.',
+                formazione_title: 'Propesyonal na<br/>Pagsasanay',
+                why_title: 'Bakit Job Academy?',
+                why1_title: 'Multidisciplinary Services',
+                why1_desc: 'Lahat ng suporta sa iisang specialized center.',
+                why2_title: 'Multilingual Experts',
+                why2_desc: 'Sinasalita namin ang iyong wika.',
+                cta_contact: 'Makipag-ugnayan',
+                cta_services: 'Mga Serbisyo',
+                footer_copy: '© Job Academy - Genoa'
+            },
+            zh: {
+                header_tagline: '面向未来的服务',
+                hero_title: '在意大利 <br/><span class="text-primary">开创您的未来。</span>',
+                hero_subtitle1: '培训、证件、工作。',
+                hero_subtitle2: '一站式服务。',
+                lang_select_title: '您讲哪种语言？',
+                services_heading: '我们的服务',
+                expertise_label: '专业知识',
+                service1_title: '税务与社会援助 (CAF)',
+                service1_desc: 'Isee、报税、家庭津贴、失业救济、养老金、补贴。',
+                service2_title: '移民服务',
+                service2_desc: '居留许可、国籍申请、家庭团聚、住址登记。',
+                service3_title: '就业与金融',
+                service3_desc: '职业介绍、贷款、抵押贷款、保险服务。',
+                service4_title: '住房与法律',
+                service4_desc: '租房合同、法律援助、翻译、学历认证。',
+                formazione_title: '职业<br/>培训',
+                why_title: '为什么选择 Job Academy？',
+                why1_title: '多元化服务',
+                why1_desc: '在一站式专业中心获得您所需的所有支持。',
+                why2_title: '多语种专家',
+                why2_desc: '我们使用您的语言进行沟通，确保清晰透明。',
+                cta_contact: '联系我们',
+                cta_services: '服务项目',
+                footer_copy: '© Job Academy - 热那亚'
+            }
+        };
+
+        function translatePage(lang) {
+            const transData = translations[lang] || translations['it'];
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (transData[key]) {
+                    el.innerHTML = transData[key];
+                } else if (translations['it'][key]) {
+                    el.innerHTML = translations['it'][key];
+                }
+            });
+            
+            // Set text direction for Arabic and Urdu
+            if (lang === 'ar' || lang === 'ur') {
+                document.body.dir = 'rtl';
+            } else {
+                document.body.dir = 'ltr';
+            }
+        }
+
+        document.getElementById('languageSelector').addEventListener('change', (e) => {
+            translatePage(e.target.value);
+        });
+    </script>
+</body></html>
