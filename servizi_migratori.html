@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Job Academy - Servizi Migratori</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#c00014",
+                    "primary": "#ba0013",
+                    "surface-container-low": "#f3f4f5",
+                    "tertiary-fixed": "#cbe6ff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#8ecdff",
+                    "surface-variant": "#e1e3e4",
+                    "inverse-surface": "#2e3132",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "primary-container": "#e31e24",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-container-high": "#e7e8e9",
+                    "inverse-primary": "#ffb4ab",
+                    "on-primary-fixed-variant": "#93000d",
+                    "secondary": "#4e5e82",
+                    "secondary-container": "#c4d4fe",
+                    "on-tertiary-container": "#fbfcff",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "outline-variant": "#e7bdb8",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#410002",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#007bb5",
+                    "on-secondary": "#ffffff",
+                    "background": "#f8f9fa",
+                    "primary-fixed": "#ffdad6",
+                    "surface-dim": "#d9dadb",
+                    "on-secondary-container": "#4b5b7f",
+                    "secondary-fixed-dim": "#b6c6f0",
+                    "on-tertiary-fixed": "#001e30",
+                    "on-secondary-fixed": "#071b3b",
+                    "on-surface-variant": "#5d3f3c",
+                    "on-secondary-fixed-variant": "#364669",
+                    "surface-container": "#edeeef",
+                    "on-primary-container": "#fffafa",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f8f9fa",
+                    "outline": "#926f6b",
+                    "on-surface": "#191c1d",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "surface-container-highest": "#e1e3e4",
+                    "tertiary": "#006190",
+                    "on-background": "#191c1d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Work Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl fixed top-0 w-full z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<img alt="Job Academy Logo" class="w-10 h-10 object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida/ADBb0uhddHjFJ4wKH0GQYR0gouQMeHv-vNKUa8aRJ-8dV9K8zp3WzzRwu2AIt9_FCq1IQGjTufMyLrkQvGmJMPUGMoeLs2RljWGSOfG2TEzuraLYba4J3GVC38b-ILvTLReD73fTaajFNRGVyG3hu6IjlKZWXx_23KOQSmzwbMhGOUR2--Thl-my3r-6kTRwa_A7-r3jMNWtMo-S9yjYRpoBuW0_bvp5Swy5OA0PuEeeQ9wlxLnArpwF5QOPhsoFFEluV3DV3-GqRLnr-Q"/>
+<div class="flex flex-col">
+<span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-red-700 dark:text-red-500 uppercase tracking-widest text-lg">Job Academy</span>
+<span class="text-[10px] text-slate-500 font-medium uppercase tracking-[0.2em]" data-translate="tagline">Servizi per il Futuro</span>
+</div>
+</div>
+<div class="active:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-slate-500" data-icon="language">language</span>
+</div>
+</div>
+</header>
+<main class="pt-24 px-5 max-w-lg mx-auto">
+<!-- Language Selector -->
+<!-- Page Header Asymmetric -->
+<div class="mb-10">
+<h1 class="font-headline text-4xl font-extrabold text-on-surface leading-tight" data-translate="page_title">Servizi <br/><span class="text-primary">Migratori</span></h1>
+<div class="h-1.5 w-12 bg-primary mt-4 rounded-full"></div>
+</div>
+<!-- Services Bento/Grid -->
+<div class="grid grid-cols-1 gap-4">
+<!-- Ricongiungimento -->
+<div class="glass-card rounded-3xl p-6 flex flex-col justify-between group active:scale-[0.98] transition-transform">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-2xl bg-red-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="group">group</span>
+</div>
+</div>
+<h3 class="text-xl font-bold font-headline mb-2" data-translate="service_1">Ricongiungimento familiare</h3>
+<p class="text-sm text-secondary leading-relaxed mb-6" data-translate="desc_1">Riunisci la tua famiglia in Italia con il nostro supporto legale completo.</p>
+<a class="bg-primary text-white py-3 px-6 rounded-2xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-red-900/10 hover:bg-red-700 transition-colors" href="https://wa.me/393501591719">
+<span data-translate="cta">Richiedi ora</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Permesso di soggiorno -->
+<div class="glass-card rounded-3xl p-6 flex flex-col justify-between group active:scale-[0.98] transition-transform">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl" data-icon="badge">badge</span>
+</div>
+</div>
+<h3 class="text-xl font-bold font-headline mb-2" data-translate="service_2">Permesso di soggiorno</h3>
+<p class="text-sm text-secondary leading-relaxed mb-6" data-translate="desc_2">Rilascio, rinnovo e conversione di ogni tipologia di permesso.</p>
+<a class="bg-primary text-white py-3 px-6 rounded-2xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-red-900/10 transition-colors" href="https://wa.me/393501591719">
+<span data-translate="cta">Richiedi ora</span>
+</a>
+</div>
+<!-- Cittadinanza -->
+<div class="glass-card rounded-3xl p-6 flex flex-col justify-between group active:scale-[0.98] transition-transform">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-2xl bg-red-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="flag">flag</span>
+</div>
+</div>
+<h3 class="text-xl font-bold font-headline mb-2" data-translate="service_3">Cittadinanza</h3>
+<p class="text-sm text-secondary leading-relaxed mb-6" data-translate="desc_3">Assistenza per cittadinanza per residenza o matrimonio.</p>
+<a class="bg-primary text-white py-3 px-6 rounded-2xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-red-900/10 transition-colors" href="https://wa.me/393501591719">
+<span data-translate="cta">Richiedi ora</span>
+</a>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Decreto Flussi -->
+<div class="glass-card rounded-3xl p-5 flex flex-col transition-transform">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="groups_3">groups_3</span>
+<h3 class="text-sm font-bold font-headline leading-tight mb-4" data-translate="service_4">Decreto Flussi</h3>
+<a class="mt-auto text-xs font-bold text-primary flex items-center gap-1" href="https://wa.me/393501591719">
+<span data-translate="cta_short">Richiedi</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</div>
+<!-- Articolo 23 TUI -->
+<div class="glass-card rounded-3xl p-5 flex flex-col transition-transform">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="gavel">gavel</span>
+<h3 class="text-sm font-bold font-headline leading-tight mb-4" data-translate="service_5">Articolo 23 TUI</h3>
+<a class="mt-auto text-xs font-bold text-primary flex items-center gap-1" href="https://wa.me/393501591719">
+<span data-translate="cta_short">Richiedi</span>
+</a>
+</div>
+</div>
+<!-- Visto Turistico -->
+<div class="glass-card rounded-3xl p-6 flex items-center gap-5 active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 shrink-0 rounded-full bg-slate-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-600" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-base font-bold font-headline" data-translate="service_6">Visto Turistico</h3>
+<p class="text-xs text-slate-500" data-translate="desc_mini">Pratiche veloci per ingressi brevi.</p>
+</div>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary" href="https://wa.me/393501591719">
+<span class="material-symbols-outlined text-sm">chat</span>
+</a>
+</div>
+<!-- Visto Lavoro -->
+<div class="glass-card rounded-3xl p-6 flex items-center gap-5 active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 shrink-0 rounded-full bg-slate-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-600" data-icon="work">work</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-base font-bold font-headline" data-translate="service_7">Visto Lavoro</h3>
+<p class="text-xs text-slate-500" data-translate="desc_mini_2">Per lavoratori subordinati.</p>
+</div>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary" href="https://wa.me/393501591719">
+<span class="material-symbols-outlined text-sm">chat</span>
+</a>
+</div>
+<!-- Visto Studente -->
+<div class="glass-card rounded-3xl p-6 flex items-center gap-5 active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 shrink-0 rounded-full bg-slate-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-600" data-icon="school">school</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-base font-bold font-headline" data-translate="service_8">Visto Studente</h3>
+<p class="text-xs text-slate-500" data-translate="desc_mini_3">Iscrizioni universitarie e corsi.</p>
+</div>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary" href="https://wa.me/393501591719">
+<span class="material-symbols-outlined text-sm">chat</span>
+</a>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-16 mb-8 text-center px-4">
+<div class="w-16 h-1 bg-slate-200 mx-auto mb-10 rounded-full"></div>
+<div class="space-y-4 text-sm text-secondary">
+<p class="font-bold text-on-surface">Job Academy © 2026</p>
+<a class="block hover:text-primary transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Canzio+50r,+Genova">Via Canzio 50r, Genova</a>
+<a class="block font-medium" href="https://wa.me/393501591719">+39 350 159 1719</a>
+<a class="block text-primary font-semibold" href="mailto:info@jobacademyilma.com">info@jobacademyilma.com</a>
+</div>
+<div class="mt-10 flex justify-center gap-6">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-slate-400">
+<span class="material-symbols-outlined text-xl">map</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-slate-400">
+<span class="material-symbols-outlined text-xl">call</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-slate-400">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full bg-white/90 dark:bg-slate-950/90 backdrop-blur-2xl z-50 flex justify-around items-center px-4 pb-8 pt-3 border-t border-slate-100 dark:border-slate-800 shadow-[0_-10px_30px_rgba(7,27,59,0.04)]">
+<button class="flex flex-col items-center justify-center bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 rounded-xl px-8 py-1.5 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+<span class="font-['Work_Sans'] text-[11px] font-bold" data-translate="nav_servizi">Servizi</span>
+</button>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-8 py-1.5 hover:text-red-600 active:scale-95 transition-all" href="https://wa.me/393501591719">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-['Work_Sans'] text-[11px] font-medium" data-translate="nav_prenota">Prenota</span>
+</a>
+</nav>
+<script>
+        const translations = {
+            it: {
+                tagline: "Servizi per il Futuro",
+                lang_label: "Che lingua parli?",
+                page_title: "Servizi <br><span class='text-primary'>Migratori</span>",
+                service_1: "Ricongiungimento familiare",
+                desc_1: "Riunisci la tua famiglia in Italia con il nostro supporto legale completo.",
+                service_2: "Permesso di soggiorno",
+                desc_2: "Rilascio, rinnovo e conversione di ogni tipologia di permesso.",
+                service_3: "Cittadinanza",
+                desc_3: "Assistenza per cittadinanza per residenza o matrimonio.",
+                service_4: "Decreto Flussi",
+                service_5: "Articolo 23 TUI",
+                service_6: "Visto Turistico",
+                desc_mini: "Pratiche veloci per ingressi brevi.",
+                service_7: "Visto Lavoro",
+                desc_mini_2: "Per lavoratori subordinati.",
+                service_8: "Visto Studente",
+                desc_mini_3: "Iscrizioni universitarie e corsi.",
+                cta: "Richiedi ora",
+                cta_short: "Richiedi",
+                nav_servizi: "Servizi",
+                nav_prenota: "Prenota"
+            },
+            en: {
+                tagline: "Services for the Future",
+                lang_label: "What language do you speak?",
+                page_title: "Migration <br><span class='text-primary'>Services</span>",
+                service_1: "Family Reunion",
+                desc_1: "Reunite your family in Italy with our full legal support.",
+                service_2: "Residence Permit",
+                desc_2: "Issuance, renewal, and conversion of all permit types.",
+                service_3: "Citizenship",
+                desc_3: "Assistance for citizenship via residency or marriage.",
+                service_4: "Flow Decree",
+                service_5: "Article 23 TUI",
+                service_6: "Tourist Visa",
+                desc_mini: "Fast processing for short entries.",
+                service_7: "Work Visa",
+                desc_mini_2: "For employed workers.",
+                service_8: "Student Visa",
+                desc_mini_3: "University and course enrollment.",
+                cta: "Request now",
+                cta_short: "Request",
+                nav_servizi: "Services",
+                nav_prenota: "Book"
+            }
+            // Additional languages would be populated here following the same pattern
+        };
+
+        const select = document.getElementById('language-select');
+        select.addEventListener('change', (e) => {
+            const lang = e.target.value;
+            const content = translations[lang] || translations['en'];
+            
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (content[key]) {
+                    el.innerHTML = content[key];
+                }
+            });
+        });
+    </script>
+</body></html>
