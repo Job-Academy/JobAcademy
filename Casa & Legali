@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Casa &amp; Legali - Job Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#93000d",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#e7bdb8",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#364669",
+                    "surface": "#f8f9fa",
+                    "surface-tint": "#c00014",
+                    "inverse-primary": "#ffb4ab",
+                    "primary": "#ba0013",
+                    "outline": "#926f6b",
+                    "on-surface-variant": "#5d3f3c",
+                    "tertiary-fixed-dim": "#8ecdff",
+                    "primary-container": "#e31e24",
+                    "on-secondary-container": "#4b5b7f",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#d8e2ff",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "primary-fixed": "#ffdad6",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "background": "#f8f9fa",
+                    "tertiary-fixed": "#cbe6ff",
+                    "on-tertiary-container": "#fbfcff",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "on-background": "#191c1d",
+                    "secondary": "#4e5e82",
+                    "on-secondary-fixed": "#071b3b",
+                    "on-primary-container": "#fffafa",
+                    "on-surface": "#191c1d",
+                    "on-primary-fixed": "#410002",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-fixed": "#001e30",
+                    "surface-dim": "#d9dadb",
+                    "surface-container": "#edeeef",
+                    "secondary-fixed-dim": "#b6c6f0",
+                    "surface-container-high": "#e7e8e9",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e1e3e4",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#007bb5",
+                    "tertiary": "#006190",
+                    "secondary-container": "#c4d4fe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Work Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Work Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm h-16 flex justify-between items-center px-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#ba0013]">account_balance</span>
+<a class="text-xl font-extrabold text-[#ba0013] tracking-tight" href="index.html">Job Academy</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#4e5e82]">account_circle</span>
+</div>
+</header>
+<main class="pt-16 pb-24">
+<!-- Hero Section -->
+<section class="bg-on-secondary-fixed text-white overflow-hidden">
+<div class="container mx-auto px-6 pt-16 pb-12 relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 rounded-full bg-primary text-on-primary text-sm font-semibold mb-4 tracking-wider uppercase">Servizi Professionali</span>
+<h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">Casa &amp; Legali</h1>
+<p class="text-lg text-white/90 font-light leading-relaxed">La tua bussola istituzionale per la navigazione immobiliare e la tutela legale in Italia. Esperienza, fiducia e precisione.</p>
+</div>
+</div>
+<div class="relative h-[400px] w-full">
+<!-- Transition Overlay -->
+<div class="absolute inset-0 z-10 bg-gradient-to-b from-on-secondary-fixed via-transparent to-transparent h-24"></div>
+<img alt="Modern legal and real estate professional setting" class="w-full h-full object-cover hero-mask" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOsyonvlIoodKo8SuwDkh8m4oi70pLZtPXxo-nx1ldYaNu0oygehbLN9vhKS7KQwb1gwmkMN1exgFgTpS9Wu4FZEzmjoQMnaGFaVUEq4DjTgi5-fySIccioJGS64KLrD2t2LXGuIfoXS2YGA-nckAtQqzMa_3nxClL7WoPZn35oh6VrnYgpbaYBMyOORK4YchXgahiziuvlUR-ekXL3tjXy6RLPjtLUk6g2rfCN0ZP9By8wE9tSHC2OiinqS9sVprssOZHWjpaNqo"/>
+</div>
+</section>
+<!-- Main Content: Consulenza Immobiliare (Bento Grid) -->
+<section class="container mx-auto px-6 py-20">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-secondary">Consulenza Immobiliare</h2>
+<div class="h-1 w-24 bg-primary mt-2"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Ricerca Affitto -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(7,27,59,0.04)] hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">home_work</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Ricerca Casa in Affitto</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Supporto contrattuale completo e verifica di idoneità dell'immobile per la massima serenità.</p>
+<a class="inline-flex items-center text-primary font-semibold hover:underline" href="https://wa.me/393501591719">
+                        Richiedi ora <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Acquisto Casa -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(7,27,59,0.04)] hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">real_estate_agent</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Acquisto Casa</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Assistenza dal preliminare al rogito notarile, inclusa la verifica ipotecaria approfondita.</p>
+<a class="inline-flex items-center text-primary font-semibold hover:underline" href="https://wa.me/393501591719">
+                        Richiedi ora <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Gestione Contratti -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(7,27,59,0.04)] hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">description</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Gestione Locazioni</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Registrazione contratti, proroghe e risoluzioni. Gestiamo la burocrazia per te.</p>
+<a class="inline-flex items-center text-primary font-semibold hover:underline" href="https://wa.me/393501591719">
+                        Richiedi ora <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- IMU/TASI -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(7,27,59,0.04)] hover:bg-surface-container-low transition-colors duration-300 md:col-span-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">payments</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Assistenza IMU e TASI</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Calcolo e assistenza per le imposte comunali sugli immobili con precisione fiscale.</p>
+<a class="inline-flex items-center text-primary font-semibold hover:underline" href="https://wa.me/393501591719">
+                        Richiedi ora <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Voltura Utenze -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(7,27,59,0.04)] hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">electric_bolt</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Voltura Utenze</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Gestione rapida del subentro per luce, gas e acqua nel tuo nuovo immobile.</p>
+<a class="inline-flex items-center text-primary font-semibold hover:underline" href="https://wa.me/393501591719">
+                        Richiedi ora <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Visure -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(7,27,59,0.04)] hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">map</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Visura e Planimetrie</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Accesso immediato a visure catastali e planimetrie ufficiali aggiornate.</p>
+<a class="inline-flex items-center text-primary font-semibold hover:underline" href="https://wa.me/393501591719">
+                        Richiedi ora <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Servizi Legali Section (Asymmetric Editorial Layout) -->
+<section class="bg-surface-container py-20">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-12 items-center">
+<div class="lg:w-1/3">
+<h2 class="text-4xl font-extrabold text-secondary mb-6 leading-tight">Eccellenza Legale &amp; Accademica</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Il nostro dipartimento legale offre consulenza specialistica per cittadini italiani ed esteri, garantendo il riconoscimento dei diritti e dei titoli.</p>
+<div class="hidden lg:block w-px h-32 bg-outline-variant/30 ml-4"></div>
+</div>
+<div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Legale Civile/Penale -->
+<div class="bg-white p-10 rounded-2xl border-l-4 border-primary shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">gavel</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Assistenza Legale</h3>
+<p class="text-on-surface-variant mb-8">Consulenza completa in ambito civile e penale per ogni esigenza giudiziale o stragiudiziale.</p>
+<a class="px-8 py-3 bg-primary text-on-primary rounded-xl font-bold tracking-tight hover:brightness-110 active:scale-95 transition-all text-center block" href="https://wa.me/393501591719">Richiedi ora</a>
+</div>
+<!-- Traduzioni -->
+<div class="bg-white p-10 rounded-2xl border-l-4 border-tertiary shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4">translate</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Traduzioni Certificate</h3>
+<p class="text-on-surface-variant mb-8">Servizio di traduzione e asseverazione per documenti legali e ufficiali con validità internazionale.</p>
+<a class="px-8 py-3 bg-tertiary text-on-primary rounded-xl font-bold tracking-tight hover:brightness-110 active:scale-95 transition-all text-center block" href="https://wa.me/393501591719">Richiedi ora</a>
+</div>
+<!-- Titoli Esteri (Full width on md) -->
+<div class="md:col-span-2 bg-secondary text-on-secondary p-10 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-2">Riconoscimento Titoli Esteri</h3>
+<p class="text-on-secondary/80">Procedura assistita per l'equipollenza e il riconoscimento dei tuoi titoli di studio ottenuti all'estero.</p>
+</div>
+<a class="px-10 py-4 bg-white text-secondary rounded-xl font-extrabold shadow-lg hover:bg-slate-50 transition-colors whitespace-nowrap" href="https://wa.me/393501591719">Inizia Pratica</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl z-50 rounded-t-2xl shadow-[0_-4px_20px_rgba(7,27,59,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#4e5e82] dark:text-slate-400 px-6 py-2" href="index.html">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-['Work_Sans'] text-xs font-medium">Servizi</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-red-50 dark:bg-red-900/20 text-[#ba0013] dark:text-[#f8d7da] rounded-xl px-6 py-2" href="https://wa.me/393501591719">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="font-['Work_Sans'] text-xs font-medium">Prenota</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-highest pt-20 pb-10 relative">
+<div class="container mx-auto px-6 text-center">
+<div class="flex flex-col items-center gap-6 mb-12">
+<a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Canzio+50r+Genova" target="_blank">
+<span class="material-symbols-outlined">location_on</span>
+<span>Via Canzio 50r, Genova</span>
+</a>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="https://wa.me/393501591719">
+<span class="material-symbols-outlined">chat</span>
+<span>+39 350 1591719</span>
+</a>
+</div>
+</div>
+<div class="pt-10 border-t border-outline-variant/20 flex flex-col items-center gap-4">
+<div class="flex flex-col items-center gap-2">
+<a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@jobacademyilma.com">info@jobacademyilma.com</a>
+<a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="mailto:jobacademysrl@pec.it">PEC: jobacademysrl@pec.it</a>
+<span class="text-sm text-on-surface-variant/70">P.IVA: 03071340990</span>
+<p class="text-sm font-bold text-secondary mt-4">© 2026 Job Academy</p>
+</div>
+</div>
+</div>
+<!-- Logo Overlay in Footer -->
+<div class="absolute bottom-10 right-10 opacity-20 pointer-events-none">
+<div class="flex flex-col items-end">
+<span class="material-symbols-outlined text-6xl text-[#ba0013]">account_balance</span>
+<span class="text-xl font-extrabold text-[#ba0013] tracking-tighter">Job Academy</span>
+</div>
+</div>
+</footer>
+</body></html>
